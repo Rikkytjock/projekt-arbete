@@ -51,7 +51,8 @@
           "buildTarget": "frontend-wte:build:production"
         },
         "development": {
-          "buildTarget": "frontend-wte:build:development"
+          "buildTarget": "frontend-wte:build:development",
+          "port": 3001
         }
       },
       "defaultConfiguration": "development"
