@@ -1,7 +1,9 @@
-h1 {
-  font-size: 5rem;
+html {
+  font-size: 62, 5%;
+  overflow-y: scroll;
+  overflow-x: hidden;
 }
 
-.test {
-  background-color: blue($color: #000000);
+h1 {
+  font-size: 3rem;
 }
