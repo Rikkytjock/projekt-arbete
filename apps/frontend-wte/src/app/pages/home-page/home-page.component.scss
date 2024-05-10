@@ -5,10 +5,17 @@ html {
 }
 
 .recipe-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   border: 1px solid black;
 }
 
 .recipe-box {
   text-align: center;
-  padding: 2rem 0 0 2rem;
+  margin: 4rem 0 0 4rem;
+  height: 5rem;
+  width: 15rem;
+  border: 1px solid black;
+  border-radius: 10px;
 }
