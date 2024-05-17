@@ -1,13 +1,7 @@
-html {
-  font-size: 62, 5%;
-}
-
-.footer-container {
+#footer-container {
   display: flex;
   flex-direction: row;
   gap: 2rem;
   text-align: center;
-}
-
-.footer-box {
+  font-size: 1.5rem;
 }
