@@ -3,10 +3,10 @@ import { Component } from '@angular/core'
 import { RouterLink } from '@angular/router'
 
 @Component({
-  selector: 'app-home-page',
+  selector: 'app-about-page',
   standalone: true,
   imports: [CommonModule, RouterLink],
-  templateUrl: './home-page.component.html',
-  styleUrl: './home-page.component.scss'
+  templateUrl: './about-page.component.html',
+  styleUrl: './about-page.component.scss'
 })
-export class HomePageComponent {}
+export class AboutPageComponent {}
