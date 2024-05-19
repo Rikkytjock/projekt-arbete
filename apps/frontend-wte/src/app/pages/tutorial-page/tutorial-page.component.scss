@@ -1,0 +1,15 @@
+#tutorial-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid black;
+}
+
+#how-it-works-header-text {
+  text-align: center;
+  font-size: 2.5rem;
+}
+.tutorial-box {
+  letter-spacing: 1px;
+  margin-bottom: 1rem;
+}
