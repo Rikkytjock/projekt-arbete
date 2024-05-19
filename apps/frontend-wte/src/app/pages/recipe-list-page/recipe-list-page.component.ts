@@ -1,11 +1,22 @@
-import { Component } from '@angular/core'
 import { CommonModule } from '@angular/common'
+import { Component, OnInit } from '@angular/core'
+import { IRecipe } from '../../services/recipe/recipe.data'
+import { RecipeService } from '../../services/recipe/recipe.service'
 
 @Component({
   selector: 'app-recipe-list-page',
   standalone: true,
   imports: [CommonModule],
+  providers: [RecipeService],
   templateUrl: './recipe-list-page.component.html',
   styleUrl: './recipe-list-page.component.scss'
 })
-export class RecipeListPageComponent {}
+export class RecipeListPageComponent implements OnInit {
+  recipes: IRecipe[] = []
+
+  constructor(private recipeService: RecipeService) {}
+
+  async ngOnInit() {
+    this.recipes = await this.recipeService.getAll()
+  }
+}
