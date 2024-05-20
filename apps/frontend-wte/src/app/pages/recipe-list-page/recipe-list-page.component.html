@@ -1,11 +1,31 @@
-<div id="page-container">
-  <h2>Recipes</h2>
-  <div id="recipe-container">
-    <!-- Loop through recipes and add nice thumbnails -->
+<div id="recipe-list-container">
+  <div class="recipe-box">
+    <h3>Full Recipe List</h3>
   </div>
+  <div class="recipe-box">
+    <div *ngFor="let recipe of recipes">
+      Name: {{ recipe.name }}
+      description: {{ recipe.shortDescription }}
+      <img [src]="recipe.img" alt="{{ recipe.name }} image">
+    </div>
+  </div>
+  <div class="recipe-box"></div>
+  <div class="recipe-box"></div>
+  <div class="recipe-box"></div>
+  <div class="recipe-box"></div>
+  <div class="recipe-box"></div>
+  <div class="recipe-box"></div>
+  <div class="recipe-box"></div>
+  <div class="recipe-box"></div>
 </div>
 
-<div *ngFor="let recipe of recipes">
+
+
+
+
+
+
+<!-- <div *ngFor="let recipe of recipes">
   Name: {{ recipe.name }}
   <img [src]="recipe.img" alt="{{ recipe.name }} image">
-</div>
+</div> -->

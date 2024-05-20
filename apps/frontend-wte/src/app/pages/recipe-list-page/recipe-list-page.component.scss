@@ -1,0 +1,22 @@
+#recipe-list-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.recipe-box {
+  width: 20rem;
+  height: 20rem;
+  border: 1px solid black;
+}
+
+// img {
+//   width: 10rem;
+//   height: 10rem;
+//   object-fit: none;
+// }
+
+h3 {
+  font-size: 3rem;
+}
