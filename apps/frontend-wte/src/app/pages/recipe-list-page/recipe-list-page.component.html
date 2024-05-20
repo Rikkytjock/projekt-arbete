@@ -1,12 +1,17 @@
 <div id="recipe-list-container">
-  <div class="recipe-box">
+  <div>
     <h3>Full Recipe List</h3>
   </div>
   <div class="recipe-box">
-    <div *ngFor="let recipe of recipes">
-      Name: {{ recipe.name }}
-      description: {{ recipe.shortDescription }}
-      <img [src]="recipe.img" alt="{{ recipe.name }} image">
+    <div class="recipe-box" *ngFor="let recipe of recipes">
+      {{ recipe.name }}
+      <br>
+      {{ recipe.shortDescription }}
+      <br>
+      Cooking Time: {{ recipe.cookingTime }}
+      <br>
+      <br>
+      <div><img [src]="recipe.img" alt="{{ recipe.name }} image"></div>
     </div>
   </div>
   <div class="recipe-box"></div>
