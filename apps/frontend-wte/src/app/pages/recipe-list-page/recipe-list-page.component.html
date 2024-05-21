@@ -1,10 +1,10 @@
+<div id="header-text">
+  <h3>Full Recipe List</h3>
+</div>
 <div id="recipe-list-container">
-  <div>
-    <h3>Full Recipe List</h3>
-  </div>
   <div class="recipe-box">
     <div class="recipe-box" *ngFor="let recipe of recipes">
-      {{ recipe.name }}
+      <span class="name-styling">{{ recipe.name }}</span>
       <br>
       {{ recipe.shortDescription }}
       <br>
