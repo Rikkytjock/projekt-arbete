@@ -2,7 +2,6 @@ export interface IRecipe {
   id: string
   name: string
   description: string
-  shortDescription: string
   img: string
   cookingTime: ICookingTime
   ingredients: IIngredient[]
@@ -41,7 +40,6 @@ export const recipeData: IRecipe[] = [
     name: 'Daal Fry',
     description:
       'A tasty dish with lentils, tomato and spices. It goes very fast to cook. It is a refreshing dish and contains nutrious things for the belly.',
-    shortDescription: 'Delicous lentils with indian spices',
     img: 'assets/images/daal-fry.webp',
     cookingTime: {
       hours: 0,
@@ -94,7 +92,6 @@ export const recipeData: IRecipe[] = [
     name: 'Blabla dish',
     description:
       'Lorem sakogkao fa lsmalsmfl amdfma slkm flkasmklfmas kfmalks mfkasmflkasnfkansk fmaslkfm alsmfklasmnfkl nakfnas klfm klasmf',
-    shortDescription: 'Delicous lentils with indian spices',
     img: 'assets/images/tablet-and-food.png',
     cookingTime: {
       hours: 1,
