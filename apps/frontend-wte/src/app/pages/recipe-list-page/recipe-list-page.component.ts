@@ -20,10 +20,9 @@ export class RecipeListPageComponent implements OnInit {
 
   async ngOnInit() {
     this.recipes = await this.recipeService.getAll()
-    this.shortenDescriptions()
   }
 
-  shortenDescriptions() {
-    this.recipes.forEach((recipe) => (recipe.description = shortenString(recipe.description)))
+  shortenDescription(description: string) {
+    return shortenString(description, 20)
   }
 }

@@ -6,7 +6,7 @@
     <div class="recipe-box" *ngFor="let recipe of recipes">
       <span class="name-styling">{{ recipe.name }}</span>
       <br>
-      {{ recipe.shortDescription }}
+      {{ shortenDescription(recipe.description) }}
       <br>
       Cooking Time: {{ recipe.cookingTime.minutes }}
       <br>
