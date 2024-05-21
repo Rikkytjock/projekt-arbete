@@ -1,12 +1,13 @@
 import { CommonModule } from '@angular/common'
 import { Component, OnInit } from '@angular/core'
+import { RouterLink } from '@angular/router'
 import { IRecipe } from '../../services/recipe/recipe.data'
 import { RecipeService } from '../../services/recipe/recipe.service'
 
 @Component({
   selector: 'app-recipe-list-page',
   standalone: true,
-  imports: [CommonModule],
+  imports: [CommonModule, RouterLink],
   providers: [RecipeService],
   templateUrl: './recipe-list-page.component.html',
   styleUrl: './recipe-list-page.component.scss'
