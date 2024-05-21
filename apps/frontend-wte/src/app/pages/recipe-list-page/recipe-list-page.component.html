@@ -8,7 +8,7 @@
       <br>
       {{ recipe.shortDescription }}
       <br>
-      Cooking Time: {{ recipe.cookingTime }}
+      Cooking Time: {{ recipe.cookingTime.minutes }}
       <br>
       <br>
       <div><img [src]="recipe.img" alt="{{ recipe.name }} image"></div>
