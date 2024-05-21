@@ -1,6 +1,7 @@
 import { CommonModule } from '@angular/common'
 import { Component, OnInit } from '@angular/core'
 import { RouterLink } from '@angular/router'
+import { shortenString } from '@inglorious/string-formatters'
 import { IRecipe } from '../../services/recipe/recipe.data'
 import { RecipeService } from '../../services/recipe/recipe.service'
 
@@ -19,5 +20,10 @@ export class RecipeListPageComponent implements OnInit {
 
   async ngOnInit() {
     this.recipes = await this.recipeService.getAll()
+    this.shortenDescriptions()
+  }
+
+  shortenDescriptions() {
+    this.recipes.forEach((recipe) => (recipe.description = shortenString(recipe.description)))
   }
 }
