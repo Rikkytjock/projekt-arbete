@@ -143,7 +143,7 @@ export const recipeData: IRecipe[] = [
   // RECEPT 3
 
   {
-    id: '6649f6f389ea6c8a536f950c',
+    id: '6649f6f389ea6c8a536f950d',
     name: 'Chana Masala',
     description: 'Chickpeas in spicy indian curry',
     img: 'assets/images/chana-masala.jpg',
@@ -196,7 +196,7 @@ export const recipeData: IRecipe[] = [
   // RECEPT 4
 
   {
-    id: '6649f6f389ea6c8a536f950c',
+    id: '6649f6f389ea6c8a536f950e',
     name: 'Swedish Bread',
     description: 'Classical bread baked the swedish way',
     img: 'assets/images/bread.jpg',
@@ -249,7 +249,7 @@ export const recipeData: IRecipe[] = [
   // RECEPT 5
 
   {
-    id: '6649f6f389ea6c8a536f950c',
+    id: '6649f6f389ea6c8a536f950f',
     name: 'Dosa',
     description: 'Indian style pancake made of lentils and rice',
     img: 'assets/images/dosa.jpeg',
@@ -302,7 +302,7 @@ export const recipeData: IRecipe[] = [
   // RECEPT 6
 
   {
-    id: '6649f6f389ea6c8a536f950c',
+    id: '6649f6f389ea6c8a536f950g',
     name: 'Chapati',
     description: 'Flatbread made the indian way',
     img: 'assets/images/chapati.webp',
@@ -355,7 +355,7 @@ export const recipeData: IRecipe[] = [
   // RECEPT 7
 
   {
-    id: '6649f6f389ea6c8a536f950c',
+    id: '6649f6f389ea6c8a536f950h',
     name: 'Idly',
     description: 'Steamed rice cakes',
     img: 'assets/images/idly.jpg',
@@ -408,7 +408,7 @@ export const recipeData: IRecipe[] = [
   // RECEPT 8
 
   {
-    id: '6649f6f389ea6c8a536f950c',
+    id: '6649f6f389ea6c8a536f950i',
     name: 'Pani Puri',
     description: 'Spicy indian delicacy',
     img: 'assets/images/pani-puri.jpeg',
@@ -461,7 +461,7 @@ export const recipeData: IRecipe[] = [
   // RECEPT 9
 
   {
-    id: '6649f6f389ea6c8a536f950c',
+    id: '6649f6f389ea6c8a536f950cj',
     name: 'Laddo',
     description: 'Sweetness in a ball',
     img: 'assets/images/laddo.jpeg',
