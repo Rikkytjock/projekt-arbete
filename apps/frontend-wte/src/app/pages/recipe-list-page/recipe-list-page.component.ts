@@ -23,6 +23,6 @@ export class RecipeListPageComponent implements OnInit {
   }
 
   shortenDescription(description: string) {
-    return shortenString(description, 20)
+    return shortenString(description, 25)
   }
 }
