@@ -7,6 +7,6 @@ import { TutorialPageComponent } from './pages/tutorial-page/tutorial-page.compo
 export const appRoutes: Route[] = [
   { path: 'about', component: AboutPageComponent },
   { path: 'tutorial', component: TutorialPageComponent },
-  { path: 'recipe-list', component: RecipeListPageComponent },
+  { path: 'recipes', component: RecipeListPageComponent },
   { path: '', component: HomePageComponent }
 ]
