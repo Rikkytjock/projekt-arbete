@@ -1,0 +1,26 @@
+{
+  "name": "string-formatters",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "string-formatters/src",
+  "projectType": "library",
+  "tags": [],
+  "targets": {
+    "build": {
+      "executor": "@nx/js:tsc",
+      "outputs": ["{options.outputPath}"],
+      "options": {
+        "outputPath": "dist/string-formatters",
+        "main": "string-formatters/src/index.ts",
+        "tsConfig": "string-formatters/tsconfig.lib.json",
+        "assets": ["string-formatters/*.md"]
+      }
+    },
+    "test": {
+      "executor": "@nx/jest:jest",
+      "outputs": ["{workspaceRoot}/coverage/{projectRoot}"],
+      "options": {
+        "jestConfig": "string-formatters/jest.config.ts"
+      }
+    }
+  }
+}
