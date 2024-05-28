@@ -6,9 +6,8 @@
     <span class="name-styling">{{ recipe.name }}</span>
     <br>
     {{ shortenDescription(recipe.description) }}
-    <br>
+    <div class="show-more-btn" ng-if="showMore">Show more</div>
     Cooking Time: {{ recipe.cookingTime.minutes }}
-    <br>
     <br>
     <div><img [src]="recipe.img" alt="{{ recipe.name }} image"></div>
   </div>
