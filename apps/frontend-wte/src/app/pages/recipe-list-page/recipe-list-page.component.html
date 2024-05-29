@@ -6,9 +6,33 @@
     <span class="name-styling">{{ recipe.name }}</span>
     <br>
     {{ shortenDescription(recipe.description) }}
-    <div class="show-more-btn" ng-if="showMore">Show more</div>
+    <br>
+    <br>
     Cooking Time: {{ recipe.cookingTime.minutes }}
     <br>
+    <!-- TEST -->
+    <!-- <h2 *ngIf="displayDescription" ; else ElseBlock>
+      Test
+    </h2>
+
+    <ng-template #elseBlock>
+      <h2>
+        Test is Hidden
+      </h2>
+    </ng-template> -->
+
+    <div ngIf="displayName; then thenBlock; else elseBlock"></div>
+
+    <ng-template #thenBlock>
+      <h2>Test</h2>
+    </ng-template>
+
+    <ng-template #elseBlock>
+      <h2>Hidden</h2>
+    </ng-template>
+
+
+    <!-- TEST -->
     <div><img [src]="recipe.img" alt="{{ recipe.name }} image"></div>
   </div>
 </div>

@@ -16,6 +16,8 @@ import { RecipeService } from '../../services/recipe/recipe.service'
 export class RecipeListPageComponent implements OnInit {
   recipes: IRecipe[] = []
 
+  displayName = true
+  // Lägg sedan till click för att ändra true eller false
   constructor(private recipeService: RecipeService) {}
 
   async ngOnInit() {
