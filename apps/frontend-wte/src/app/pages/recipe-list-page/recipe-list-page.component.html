@@ -10,18 +10,8 @@
     <br>
     Cooking Time: {{ recipe.cookingTime.minutes }}
     <br>
-    <!-- TEST -->
-    <!-- <h2 *ngIf="displayDescription" ; else ElseBlock>
-      Test
-    </h2>
 
-    <ng-template #elseBlock>
-      <h2>
-        Test is Hidden
-      </h2>
-    </ng-template> -->
-
-    <div ngIf="displayName; then thenBlock; else elseBlock"></div>
+    <div *ngIf="displayName; then thenBlock; else elseBlock"></div>
 
     <ng-template #thenBlock>
       <h2>Test</h2>
