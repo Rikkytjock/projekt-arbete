@@ -8,8 +8,10 @@ export function shortenString(str: string, length = 25): string {
 
 export function detailedCookingTime(hours: number, minutes: number) {
   if (hours === 0) {
-    return minutes + 'm'
+    return `${minutes}m`
   } else {
-    return hours + minutes
+    return `${hours}h ${minutes}m`
   }
 }
+
+// Varför kan jag inte göra hours + 'h' + minutes 'm'         ???
