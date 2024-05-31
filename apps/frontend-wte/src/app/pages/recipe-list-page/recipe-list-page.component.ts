@@ -28,3 +28,11 @@ export class RecipeListPageComponent implements OnInit {
     return shortenString(description, 25)
   }
 }
+
+function detailedCookingTime(hours: number, minutes: number) string {
+  if hours === 0 {
+    return minutes + 'm';
+  } else {
+    return hours 'h' + minutes + 'm';
+  }
+}

@@ -15,7 +15,7 @@
     <ng-template #elseBlock>
       {{ (recipe.description) }}
     </ng-template>
-    Cooking Time: {{ recipe.cookingTime.minutes }}
+    <span>Cooking Time: {{ recipe.cookingTime.minutes }} m</span>
     <br>
     <div><img [src]="recipe.img" alt="{{ recipe.name }} image"></div>
   </div>
