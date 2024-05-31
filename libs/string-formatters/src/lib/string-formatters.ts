@@ -6,10 +6,10 @@ export function shortenString(str: string, length = 25): string {
   }
 }
 
-export function detailedCookingTime(hours: number, minutes: number) string {
-  if hours === 0 {
-    return minutes + 'm';
+export function detailedCookingTime(hours: number, minutes: number) {
+  if (hours === 0) {
+    return minutes + 'm'
   } else {
-    return hours 'h' + minutes + 'm';
+    return hours + minutes
   }
 }

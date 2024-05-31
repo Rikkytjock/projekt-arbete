@@ -10,7 +10,7 @@ export interface IRecipe {
 
 interface ICookingTime {
   hours: number
-  minutes: number + 'minutes'
+  minutes: number
 }
 
 interface IIngredient {
