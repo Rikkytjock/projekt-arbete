@@ -5,24 +5,19 @@
   <div class="recipe-box" *ngFor="let recipe of recipes">
     <span class="name-styling">{{ recipe.name }}</span>
     <br>
-    {{ shortenDescription(recipe.description) }}
+    <div *ngIf="displayName; then thenBlock; else elseBlock"></div>
+    <ng-template #thenBlock>
+      {{ shortenDescription(recipe.description) }}
+    </ng-template>
     <br>
+    <button (click)="displayName = !displayName">Read more</button>
+    <br>
+    <ng-template #elseBlock>
+      {{ (recipe.description) }}
+    </ng-template>
     <br>
     Cooking Time: {{ recipe.cookingTime.minutes }}
     <br>
-
-    <button (click)="displayName = !displayName">Action</button>
-
-    <div *ngIf="displayName; then thenBlock; else elseBlock"></div>
-
-    <ng-template #thenBlock>
-      <h2>Test</h2>
-    </ng-template>
-
-    <ng-template #elseBlock>
-      <h2>Hidden</h2>
-    </ng-template>
-
 
     <div><img [src]="recipe.img" alt="{{ recipe.name }} image"></div>
   </div>
