@@ -11,7 +11,7 @@
     Cooking Time: {{ recipe.cookingTime.minutes }}
     <br>
 
-    <button (click)="toggleDisplayName()">Show Description</button>
+    <button (click)="displayName = !displayName">Action</button>
 
     <div *ngIf="displayName; then thenBlock; else elseBlock"></div>
 
