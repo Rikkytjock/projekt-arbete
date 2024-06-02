@@ -17,6 +17,7 @@
     </ng-template>
     <span>Cooking Time: {{ detailedCookingTime(recipe.cookingTime.hours, recipe.cookingTime.minutes) }}</span>
     <br>
+    <a routerLink="/recipe-page">See full recipe</a>
     <div><img [src]="recipe.img" alt="{{ recipe.name }} image"></div>
   </div>
 </div>
