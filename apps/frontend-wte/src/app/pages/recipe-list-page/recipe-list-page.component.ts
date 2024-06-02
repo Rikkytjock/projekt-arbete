@@ -1,8 +1,8 @@
 import { CommonModule } from '@angular/common'
 import { Component, OnInit } from '@angular/core'
 import { RouterLink } from '@angular/router'
-import { detailedCookingTime, shortenString } from '@inglorious/string-formatters'
-import { IRecipe } from '../../services/recipe/recipe.data'
+import { prettyHoursAndMinutes, shortenString } from '@inglorious/string-formatters'
+import { ICookingTime, IRecipe } from '../../services/recipe/recipe.data'
 import { RecipeService } from '../../services/recipe/recipe.service'
 
 @Component({
@@ -28,7 +28,7 @@ export class RecipeListPageComponent implements OnInit {
     return shortenString(description, 25)
   }
 
-  detailedCookingTime(hours: number, minutes: number) {
-    return detailedCookingTime(hours, minutes)
+  detailedCookingTime(cookingTime: ICookingTime) {
+    return prettyHoursAndMinutes(cookingTime.hours, cookingTime.minutes)
   }
 }

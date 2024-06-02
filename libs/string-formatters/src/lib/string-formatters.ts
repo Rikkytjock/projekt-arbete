@@ -6,12 +6,10 @@ export function shortenString(str: string, length = 25): string {
   }
 }
 
-export function detailedCookingTime(hours: number, minutes: number) {
+export function prettyHoursAndMinutes(hours: number, minutes: number): string {
   if (hours === 0) {
     return `${minutes}m`
   } else {
     return `${hours}h ${minutes}m`
   }
 }
-
-// Varför kan jag inte göra hours + 'h' + minutes 'm'         ???

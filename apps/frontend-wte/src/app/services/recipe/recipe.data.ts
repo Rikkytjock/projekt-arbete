@@ -8,7 +8,7 @@ export interface IRecipe {
   steps: IStep[]
 }
 
-interface ICookingTime {
+export interface ICookingTime {
   hours: number
   minutes: number
 }
