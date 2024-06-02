@@ -20,7 +20,7 @@
 
     <span>Cooking Time: {{ detailedCookingTime(recipe.cookingTime) }}</span>
     <br>
-    <a routerLink="/recipe-page">See full recipe</a>
+    <a [routerLink]="'/recipes/' + recipe.id">See full recipe</a>
     <div><img [src]="recipe.img" alt="{{ recipe.name }} image"></div>
   </div>
 </div>
