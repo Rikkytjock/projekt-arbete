@@ -9,6 +9,6 @@ export const appRoutes: Route[] = [
   { path: 'about', component: AboutPageComponent },
   { path: 'tutorial', component: TutorialPageComponent },
   { path: 'recipes', component: RecipeListPageComponent },
-  { path: 'recipe-page', component: RecipePageComponent },
+  { path: 'recipes/:recipeId', component: RecipePageComponent },
   { path: '', component: HomePageComponent }
 ]

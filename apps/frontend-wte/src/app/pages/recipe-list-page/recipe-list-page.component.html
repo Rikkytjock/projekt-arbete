@@ -5,16 +5,19 @@
   <div class="recipe-box" *ngFor="let recipe of recipes">
     <span class="name-styling">{{ recipe.name }}</span>
     <br>
-    <div *ngIf="displayName; then thenBlock; else elseBlock"></div>
+
+    <div *ngIf="showFullDescription; then thenBlock; else elseBlock"></div>
     <ng-template #thenBlock>
+      {{ recipe.description }}
+    </ng-template>
+    <ng-template #elseBlock>
       {{ shortenDescription(recipe.description) }}
     </ng-template>
+
     <br>
-    <button (click)="displayName = !displayName">Read more</button>
+    <button (click)="showFullDescription = !showFullDescription">Read more</button>
     <br>
-    <ng-template #elseBlock>
-      {{ (recipe.description) }}
-    </ng-template>
+
     <span>Cooking Time: {{ detailedCookingTime(recipe.cookingTime) }}</span>
     <br>
     <a routerLink="/recipe-page">See full recipe</a>
