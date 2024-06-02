@@ -3,6 +3,7 @@
 </div>
 <div id="recipe-list-container">
   <div class="recipe-box" *ngFor="let recipe of recipes">
+    <!-- Flytta detta till en komponent -->
     <span class="name-styling">{{ recipe.name }}</span>
     <br>
 
@@ -22,6 +23,7 @@
     <br>
     <a [routerLink]="'/recipes/' + recipe.id">See full recipe</a>
     <div><img [src]="recipe.img" alt="{{ recipe.name }} image"></div>
+    <!-- Flytta detta till en komponent -->
   </div>
 </div>
 <h3 id="back-to-home-btn"><a routerLink="/">Back to home</a></h3>

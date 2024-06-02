@@ -16,7 +16,9 @@ import { RecipeService } from '../../services/recipe/recipe.service'
 export class RecipeListPageComponent implements OnInit {
   recipes: IRecipe[] = []
 
+  // Flytta detta till en komponent
   showFullDescription = false
+  // Flytta detta till en komponent
 
   constructor(private recipeService: RecipeService) {}
 
@@ -24,6 +26,7 @@ export class RecipeListPageComponent implements OnInit {
     this.recipes = await this.recipeService.getAll()
   }
 
+  // Flytta detta till en komponent
   shortenDescription(description: string) {
     return shortenString(description, 25)
   }
@@ -31,4 +34,5 @@ export class RecipeListPageComponent implements OnInit {
   detailedCookingTime(cookingTime: ICookingTime) {
     return prettyHoursAndMinutes(cookingTime.hours, cookingTime.minutes)
   }
+  // Flytta detta till en komponent
 }
