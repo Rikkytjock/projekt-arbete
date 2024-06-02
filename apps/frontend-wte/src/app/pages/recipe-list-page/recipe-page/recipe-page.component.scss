@@ -1,5 +1,20 @@
-.show-more-btn {
+#page-container {
+  display: flex;
+  flex-wrap: wrap;
+  height: 40rem;
+  width: auto;
   border: 1px solid black;
 }
 
-// Varför blir den inte stylad?
+#header-box {
+  justify-content: center;
+  align-content: center;
+  text-align: center;
+  border: 1px solid red;
+}
+
+.page-box {
+  height: 10rem;
+  width: 15rem;
+  border: 1px solid purple;
+}
