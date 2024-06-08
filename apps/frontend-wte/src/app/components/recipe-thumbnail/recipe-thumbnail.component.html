@@ -11,7 +11,8 @@
   </ng-template>
 
   <br>
-  <button (click)="showFullDescription = !showFullDescription">Read more</button>
+  <button *ngIf="recipe.description.length >= shortenDescriptionLength"
+    (click)="showFullDescription = !showFullDescription">Read more</button>
   <br>
 
   <span>Cooking Time: {{ detailedCookingTime(recipe.cookingTime) }}</span>

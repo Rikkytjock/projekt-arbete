@@ -27,10 +27,11 @@ export class RecipeThumbnailComponent {
     steps: []
   }
 
+  shortenDescriptionLength = 25
   showFullDescription = false
 
   shortenDescription(description: string) {
-    return shortenString(description, 25)
+    return shortenString(description, this.shortenDescriptionLength)
   }
 
   detailedCookingTime(cookingTime: ICookingTime) {
