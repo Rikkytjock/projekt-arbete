@@ -15,7 +15,8 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
-      "@inglorious/string-formatters": ["libs/string-formatters/src/index.ts"]
+      "@inglorious/core-types": ["libs/core/types/src/index.ts"],
+      "@inglorious/string-formatters": ["libs/core/string-formatters/src/index.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]
