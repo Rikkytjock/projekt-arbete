@@ -1,5 +1,5 @@
 <div>
-  <span class="name-styling">{{ recipe.name }}</span>
+  <span id="recipe-name">{{ recipe.name }}</span>
   <br>
 
   <div *ngIf="showFullDescription; then thenBlock; else elseBlock"></div>
@@ -17,5 +17,5 @@
   <span>Cooking Time: {{ detailedCookingTime(recipe.cookingTime) }}</span>
   <br>
   <a [routerLink]="'/recipes/' + recipe.id">See full recipe</a>
-  <div><img [src]="recipe.img" alt="{{ recipe.name }} image"></div>
+  <div><img id="recipe-image" [src]="recipe.img" alt="{{ recipe.name }} image"></div>
 </div>
