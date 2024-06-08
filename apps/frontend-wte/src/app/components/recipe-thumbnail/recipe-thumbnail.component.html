@@ -1,1 +1,21 @@
-<p>recipe-thumbnail works!</p>
+<div>
+  <span class="name-styling">{{ recipe.name }}</span>
+  <br>
+
+  <div *ngIf="showFullDescription; then thenBlock; else elseBlock"></div>
+  <ng-template #thenBlock>
+    {{ recipe.description }}
+  </ng-template>
+  <ng-template #elseBlock>
+    {{ shortenDescription(recipe.description) }}
+  </ng-template>
+
+  <br>
+  <button (click)="showFullDescription = !showFullDescription">Read more</button>
+  <br>
+
+  <span>Cooking Time: {{ detailedCookingTime(recipe.cookingTime) }}</span>
+  <br>
+  <a [routerLink]="'/recipes/' + recipe.id">See full recipe</a>
+  <div><img [src]="recipe.img" alt="{{ recipe.name }} image"></div>
+</div>
