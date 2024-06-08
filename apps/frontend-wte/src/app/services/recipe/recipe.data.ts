@@ -1,38 +1,4 @@
-export interface IRecipe {
-  id: string
-  name: string
-  description: string
-  img: string
-  cookingTime: ICookingTime
-  ingredients: IIngredient[]
-  steps: IStep[]
-}
-
-export interface ICookingTime {
-  hours: number
-  minutes: number
-}
-
-interface IIngredient {
-  name: string
-  quantity: IQuantity
-}
-
-interface IQuantity {
-  amount: number
-  unit: Unit
-}
-
-enum Unit {
-  Grams = 'grams',
-  Pieces = 'pieces'
-}
-
-interface IStep {
-  stepNumber: number
-  name: string
-  description: string
-}
+import { IRecipe, Unit } from '@inglorious/core-types'
 
 export const recipeData: IRecipe[] = [
   {

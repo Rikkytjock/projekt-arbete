@@ -1,1 +1,1 @@
-export * from './lib/core-types'
+export * from './lib/recipe.types'

@@ -1,8 +1,8 @@
 import { CommonModule } from '@angular/common'
 import { Component, OnInit } from '@angular/core'
 import { RouterLink } from '@angular/router'
+import { IRecipe } from '@inglorious/core-types'
 import { RecipeThumbnailComponent } from '../../components/recipe-thumbnail/recipe-thumbnail.component'
-import { IRecipe } from '../../services/recipe/recipe.data'
 import { RecipeService } from '../../services/recipe/recipe.service'
 
 @Component({

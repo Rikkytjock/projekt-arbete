@@ -1,8 +1,8 @@
 import { CommonModule } from '@angular/common'
 import { Component, Input } from '@angular/core'
 import { RouterLink } from '@angular/router'
+import { ICookingTime } from '@inglorious/core-types'
 import { prettyHoursAndMinutes, shortenString } from '@inglorious/string-formatters'
-import { ICookingTime } from '../../services/recipe/recipe.data'
 import { RecipeService } from '../../services/recipe/recipe.service'
 
 @Component({
