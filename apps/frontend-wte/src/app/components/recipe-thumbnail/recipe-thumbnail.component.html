@@ -11,12 +11,12 @@
   </ng-template>
 
   <br>
-  <button *ngIf="recipe.description.length >= shortenDescriptionLength"
+  <button id="read-more-btn" *ngIf="recipe.description.length >= shortenDescriptionLength"
     (click)="showFullDescription = !showFullDescription">Read more</button>
   <br>
 
   <span>Cooking Time: {{ detailedCookingTime(recipe.cookingTime) }}</span>
   <br>
-  <a [routerLink]="'/recipes/' + recipe.id">See full recipe</a>
+  <a id="full-recipe-btn" [routerLink]="'/recipes/' + recipe.id">See full recipe</a>
   <div><img id="recipe-image" [src]="recipe.img" alt="{{ recipe.name }} image"></div>
 </div>

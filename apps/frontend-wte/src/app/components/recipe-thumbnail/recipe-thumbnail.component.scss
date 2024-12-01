@@ -9,3 +9,43 @@
   width: 15rem;
   object-fit: cover;
 }
+
+#read-more-btn,
+#full-recipe-btn {
+  display: inline-block;
+  padding: 0.4rem 1rem;
+  font-size: 0.9rem;
+  font-weight: bold;
+  color: #ffffff;
+  border: none;
+  border-radius: 5px;
+  text-decoration: none; /* Tar bort linje vid länkar */
+  cursor: pointer; /* Ändrar pointer vid hoover */
+  transition: background-color 0.2s, transform 0.2s; /* Skön hoover effekt */
+}
+
+/* Specific colors for each button */
+#read-more-btn {
+  background-color: #007bff;
+}
+
+#read-more-btn:hover {
+  background-color: #0056b3;
+}
+
+#read-more-btn:active {
+  background-color: #003f88;
+}
+
+#full-recipe-btn {
+  background-color: #28a745;
+  margin-bottom: 0.5rem;
+}
+
+#full-recipe-btn:hover {
+  background-color: #218838;
+}
+
+#full-recipe-btn:active {
+  background-color: #1e7e34;
+}

@@ -3,7 +3,9 @@
 </div>
 <div id="recipe-list-container">
   <div class="recipe-box" *ngFor="let recipe of recipes">
-    <app-recipe-thumbnail [recipe]="recipe"></app-recipe-thumbnail>
+    <app-recipe-thumbnail class="recipe-text" [recipe]="recipe"></app-recipe-thumbnail>
   </div>
 </div>
-<h3 id="back-to-home-btn" class="h3-size"><a routerLink="/">Back to home</a></h3>
+<h3 id="back-to-home-btn" class="h3-size">
+  <a routerLink="/">Back to home</a>
+</h3>
