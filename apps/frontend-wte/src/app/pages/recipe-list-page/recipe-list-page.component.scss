@@ -5,14 +5,14 @@
   justify-content: center;
   align-items: flex-start;
   padding: 2rem;
-  background-color: #f9f9f9; /* Light background for contrast */
+  background-color: #f9f9f9;
 }
 
 .recipe-box {
   width: 18rem;
   height: auto;
-  border-radius: 10px; /* Rounded corners for a clean look */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  border-radius: 10px; /* Rundade hörn*/
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Skugga */
   overflow: hidden;
   background-color: #ffffff;
   display: flex;
@@ -21,7 +21,7 @@
   justify-content: center;
   padding: 1rem;
   text-align: center;
-  transition: transform 0.2s, box-shadow 0.2s; /* Smooth hover effect */
+  transition: transform 0.2s, box-shadow 0.2s;
 }
 
 .recipe-box:hover {
@@ -45,6 +45,9 @@
   font-size: 2.5rem;
   font-weight: bold;
   color: #333333;
+  text-align: center;
+  margin-bottom: 1.5rem;
+  letter-spacing: 0.05rem;
 }
 
 #back-to-home-btn {
@@ -53,12 +56,12 @@
 }
 
 #back-to-home-btn a {
-  text-decoration: none; /* Remove underline */
+  text-decoration: none;
   font-size: 1.2rem;
   color: #007bff;
   transition: color 0.2s;
 }
 
 #back-to-home-btn a:hover {
-  color: #0056b3; /* Darker blue on hover */
+  color: #0056b3;
 }
