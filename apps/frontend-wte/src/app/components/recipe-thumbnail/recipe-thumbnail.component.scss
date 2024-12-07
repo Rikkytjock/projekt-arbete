@@ -10,8 +10,32 @@
   object-fit: cover;
 }
 
-#read-more-btn,
+#read-more-btn {
+  background-color: #f0f0f0; // Ljus bakgrund
+  color: #000000;
+  font-weight: bold;
+  border: none;
+  padding: 0.25rem 0.75rem;
+  border-radius: 0.25rem;
+  text-decoration: none;
+  cursor: pointer; // Ändrar hur pekaren ser ut
+  transition: background-color 0.2s, transform 0.2s; // Ger den effekt och blir större.
+  box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.1);
+}
+
+#read-more-btn:hover {
+  background-color: #e0e0e0;
+  transform: scale(1.03);
+}
+
+#read-more-btn:active {
+  background-color: #d0d0d0;
+  transform: scale(0.97);
+}
+
 #full-recipe-btn {
+  background-color: #28a745;
+  margin-bottom: 0.5rem;
   display: inline-block;
   padding: 0.4rem 1rem;
   font-size: 0.9rem;
@@ -20,26 +44,8 @@
   border: none;
   border-radius: 5px;
   text-decoration: none; /* Tar bort linje vid länkar */
-  cursor: pointer; /* Ändrar pointer vid hoover */
+  cursor: pointer;
   transition: background-color 0.2s, transform 0.2s; /* Skön hoover effekt */
-}
-
-/* Specific colors for each button */
-#read-more-btn {
-  background-color: #007bff;
-}
-
-#read-more-btn:hover {
-  background-color: #0056b3;
-}
-
-#read-more-btn:active {
-  background-color: #003f88;
-}
-
-#full-recipe-btn {
-  background-color: #28a745;
-  margin-bottom: 0.5rem;
 }
 
 #full-recipe-btn:hover {
