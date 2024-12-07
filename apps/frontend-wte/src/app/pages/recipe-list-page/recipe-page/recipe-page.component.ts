@@ -34,6 +34,6 @@ export class RecipePageComponent implements OnInit {
   ) {}
 
   async ngOnInit() {
-    this.recipe = await this.recipeService.getById('id')
+    this.recipe = await this.recipeService.getById('6649f6e489ea6c8a536f950b')
   }
 }
