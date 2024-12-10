@@ -3,7 +3,7 @@
   <br>
 
   <div *ngIf="showFullDescription; then thenBlock; else elseBlock"></div>
-  <ng-template #thenBlock>
+  <ng-template class="recipe-text" #thenBlock>
     {{ recipe.description }}
   </ng-template>
   <ng-template #elseBlock>
