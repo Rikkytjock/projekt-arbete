@@ -2,13 +2,15 @@
   <span id="recipe-name">{{ recipe.name }}</span>
   <br>
 
-  <div *ngIf="showFullDescription; then thenBlock; else elseBlock"></div>
-  <ng-template #thenBlock>
-    {{ recipe.description }}
-  </ng-template>
-  <ng-template #elseBlock>
-    {{ shortenDescription(recipe.description) }}
-  </ng-template>
+  <div id="recipe-text">
+    <div *ngIf="showFullDescription; then thenBlock; else elseBlock"></div>
+    <ng-template #thenBlock>
+      {{ recipe.description }}
+    </ng-template>
+    <ng-template #elseBlock>
+      {{ shortenDescription(recipe.description) }}
+    </ng-template>
+  </div>
 
   <br>
   <button id="read-more-btn" *ngIf="recipe.description.length >= shortenDescriptionLength"
