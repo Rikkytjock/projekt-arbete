@@ -10,7 +10,6 @@ export class RecipeService {
   }
 
   async getById(recipeId: string) {
-    console.log(recipeId)
     const recipe = recipeData.find((recipe) => recipe.id === recipeId)
     if (!recipe) throw new Error('No recipe with that ID')
 
