@@ -2,21 +2,23 @@
   <span id="recipe-name">{{ recipe.name }}</span>
   <br>
 
-  <div *ngIf="showFullDescription; then thenBlock; else elseBlock"></div>
-  <ng-template #thenBlock>
-    {{ recipe.description }}
-  </ng-template>
-  <ng-template #elseBlock>
-    {{ shortenDescription(recipe.description) }}
-  </ng-template>
+  <div id="recipe-text">
+    <div *ngIf="showFullDescription; then thenBlock; else elseBlock"></div>
+    <ng-template #thenBlock>
+      {{ recipe.description }}
+    </ng-template>
+    <ng-template #elseBlock>
+      {{ shortenDescription(recipe.description) }}
+    </ng-template>
+  </div>
 
   <br>
-  <button *ngIf="recipe.description.length >= shortenDescriptionLength"
+  <button id="read-more-btn" *ngIf="recipe.description.length >= shortenDescriptionLength"
     (click)="showFullDescription = !showFullDescription">Read more</button>
   <br>
 
   <span>Cooking Time: {{ detailedCookingTime(recipe.cookingTime) }}</span>
   <br>
-  <a [routerLink]="'/recipes/' + recipe.id">See full recipe</a>
+  <a id="full-recipe-btn" [routerLink]="'/recipes/' + recipe.id">See full recipe</a>
   <div><img id="recipe-image" [src]="recipe.img" alt="{{ recipe.name }} image"></div>
 </div>

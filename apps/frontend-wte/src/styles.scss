@@ -1,3 +1,37 @@
+@font-face {
+  font-family: 'opensans';
+  src: url('/assets/fonts/opensans-light-webfont.woff2') format('woff2'),
+    url('/assets/fonts/opensans-light-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'opensans-italic';
+  src: url('/assets/fonts/opensans-lightitalic-webfont.woff2') format('woff2'),
+    url('/assets/fonts/opensans-lightitalic-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'roboto';
+  src: url('/assets/fonts/roboto-regular-webfont.woff2') format('woff2'),
+    url('/assets/fonts/roboto-regular-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'avenir';
+  src: url('/assets/fonts/avenirltstd-black-webfont.woff2') format('woff2'),
+    url('/assets/fonts/avenirltstd-black-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+// GLOBAL STYLING
+
 html {
   font-size: 62, 5%;
   overflow-y: scroll;
@@ -7,4 +41,5 @@ html {
 body {
   margin: 0;
   padding: 0;
+  font-family: 'opensans';
 }
