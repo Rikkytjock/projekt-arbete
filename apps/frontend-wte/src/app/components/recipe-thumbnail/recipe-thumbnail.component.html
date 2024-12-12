@@ -2,8 +2,8 @@
   <span id="recipe-name">{{ recipe.name }}</span>
   <br>
 
-  <div *ngIf="showFullDescription; then thenBlock; else elseBlock"></div>
   <div id="recipe-text">
+    <div *ngIf="showFullDescription; then thenBlock; else elseBlock"></div>
     <ng-template #thenBlock>
       {{ recipe.description }}
     </ng-template>
