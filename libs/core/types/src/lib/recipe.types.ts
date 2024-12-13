@@ -25,7 +25,15 @@ export interface IQuantity {
 
 export enum Unit {
   Grams = 'grams',
-  Pieces = 'pieces'
+  Pieces = 'pieces',
+  Teaspoons = 'teaspoons',
+  Tablespoons = 'tablespoons',
+  Milliliters = 'milliliters',
+  Liters = 'liters',
+  Cups = 'cups',
+  Kilograms = 'kilograms',
+  Ounces = 'ounces',
+  Pounds = 'pounds'
 }
 
 export interface IStep {
