@@ -5,50 +5,148 @@ export const recipeData: IRecipe[] = [
     id: '6649f6e489ea6c8a536f950b',
     name: 'Daal Fry',
     description:
-      'A tasty dish with lentils, tomato and spices. It goes very fast to cook. It is a refreshing dish and contains nutrious things for the belly.',
-    img: 'assets/images/daal-fry.webp',
+      'A rich, flavorful and nutritious lentil dish made with red lentils, tomatoes, and aromatic spices. Simple to prepare and packed with protein, perfect for a wholesome meal.',
+    img: 'assets/images/daal-fry.jpg',
     cookingTime: {
       hours: 0,
-      minutes: 15
+      minutes: 30
     },
     ingredients: [
       {
         name: 'Red lentils',
         quantity: {
-          amount: 100,
+          amount: 200,
           unit: Unit.Grams
         }
       },
       {
         name: 'Tomatoes',
         quantity: {
-          amount: 2,
+          amount: 3,
           unit: Unit.Pieces
         }
       },
       {
         name: 'Mustard seeds',
         quantity: {
-          amount: 10,
-          unit: Unit.Grams
+          amount: 1,
+          unit: Unit.Teaspoons
+        }
+      },
+      {
+        name: 'Cumin seeds',
+        quantity: {
+          amount: 1,
+          unit: Unit.Teaspoons
+        }
+      },
+      {
+        name: 'Turmeric powder',
+        quantity: {
+          amount: 0.5,
+          unit: Unit.Teaspoons
+        }
+      },
+      {
+        name: 'Coriander powder',
+        quantity: {
+          amount: 1,
+          unit: Unit.Teaspoons
+        }
+      },
+      {
+        name: 'Ghee',
+        quantity: {
+          amount: 2,
+          unit: Unit.Tablespoons
+        }
+      },
+      {
+        name: 'Curry leaves',
+        quantity: {
+          amount: 8,
+          unit: Unit.Pieces
+        }
+      },
+      {
+        name: 'Fresh coriander leaves',
+        quantity: {
+          amount: 2,
+          unit: Unit.Tablespoons
+        }
+      },
+      {
+        name: 'Salt',
+        quantity: {
+          amount: 1,
+          unit: Unit.Teaspoons
+        }
+      },
+      {
+        name: 'Water',
+        quantity: {
+          amount: 500,
+          unit: Unit.Milliliters
         }
       }
     ],
     steps: [
       {
         stepNumber: 1,
-        name: 'Fry tomatoes',
-        description: 'Put tomatoes in hot pan medium heat.'
+        name: 'Rinse and soak lentils',
+        description:
+          'Rinse the red lentils under cold water until the water runs clear. Soak them in water for 15 minutes.'
       },
       {
         stepNumber: 2,
-        name: 'Throw in lentils',
-        description: 'Wash the lentils and throw in the pan with tomatoes.'
+        name: 'Prepare the ingredients',
+        description:
+          'Chop the tomatoes and coriander leaves. Measure out all the spices and ingredients so they are ready to use.'
       },
       {
         stepNumber: 3,
-        name: 'Add mustard seeds',
-        description: 'Throw mustard seeds in pan until they pop.'
+        name: 'Cook the lentils',
+        description:
+          'In a medium pot, add the soaked red lentils, 500ml of water, and 1/2 teaspoon of turmeric. Bring to a boil, then reduce the heat to low and let it simmer for 15-20 minutes or until the lentils are soft.'
+      },
+      {
+        stepNumber: 4,
+        name: 'Heat the ghee',
+        description: 'In a separate pan, heat 2 tablespoons of ghee on medium heat.'
+      },
+      {
+        stepNumber: 5,
+        name: 'Add mustard and cumin seeds',
+        description: 'Add the mustard seeds and cumin seeds to the hot ghee. Let them splutter for 30 seconds.'
+      },
+      {
+        stepNumber: 6,
+        name: 'Add curry leaves and spices',
+        description:
+          'Add the curry leaves, turmeric powder, coriander powder, and a pinch of salt. Stir well for 30 seconds.'
+      },
+      {
+        stepNumber: 7,
+        name: 'Add tomatoes',
+        description:
+          'Add the chopped tomatoes to the pan and cook for 4-5 minutes until the tomatoes are soft and pulpy.'
+      },
+      {
+        stepNumber: 8,
+        name: 'Combine lentils and masala',
+        description:
+          'Once the tomatoes are soft, add the cooked lentils to the pan with the spice mixture. Mix well and cook for another 5-7 minutes on low heat.'
+      },
+      {
+        stepNumber: 9,
+        name: 'Add fresh coriander leaves',
+        description: 'Turn off the heat and sprinkle fresh coriander leaves on top. Mix it into the dal gently.'
+      },
+      {
+        stepNumber: 10,
+        name: 'Serve hot',
+        description:
+          'Serve the daal fry hot with rice or flatbread like roti or chapati. Enjoy your delicious, wholesome meal.'
       }
     ]
   },
