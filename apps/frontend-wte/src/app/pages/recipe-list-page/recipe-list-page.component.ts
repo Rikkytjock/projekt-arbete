@@ -1,6 +1,5 @@
 import { CommonModule } from '@angular/common'
 import { Component, OnInit } from '@angular/core'
-import { RouterLink } from '@angular/router'
 import { IRecipe } from '@inglorious/core-types'
 import { RecipeThumbnailComponent } from '../../components/recipe-thumbnail/recipe-thumbnail.component'
 import { RecipeService } from '../../services/recipe/recipe.service'
@@ -8,7 +7,7 @@ import { RecipeService } from '../../services/recipe/recipe.service'
 @Component({
   selector: 'app-recipe-list-page',
   standalone: true,
-  imports: [CommonModule, RouterLink, RecipeThumbnailComponent],
+  imports: [CommonModule, RecipeThumbnailComponent],
   providers: [RecipeService],
   templateUrl: './recipe-list-page.component.html',
   styleUrl: './recipe-list-page.component.scss'

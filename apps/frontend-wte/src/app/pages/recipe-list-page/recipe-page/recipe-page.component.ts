@@ -2,13 +2,12 @@ import { CommonModule } from '@angular/common'
 import { Component, OnInit } from '@angular/core'
 import { ActivatedRoute, RouterLink } from '@angular/router'
 import { IRecipe } from '@inglorious/core-types'
-import { RecipeThumbnailComponent } from '../../../components/recipe-thumbnail/recipe-thumbnail.component'
 import { RecipeService } from '../../../services/recipe/recipe.service'
 
 @Component({
   selector: 'app-recipe-page',
   standalone: true,
-  imports: [CommonModule, RecipeThumbnailComponent, RouterLink],
+  imports: [CommonModule, RouterLink],
   providers: [RecipeService],
   templateUrl: './recipe-page.component.html',
   styleUrl: './recipe-page.component.scss'
