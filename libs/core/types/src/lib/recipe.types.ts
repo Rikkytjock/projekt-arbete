@@ -31,9 +31,7 @@ export enum Unit {
   Milliliters = 'milliliters',
   Liters = 'liters',
   Cups = 'cups',
-  Kilograms = 'kilograms',
-  Ounces = 'ounces',
-  Pounds = 'pounds'
+  Kilograms = 'kilograms'
 }
 
 export interface IStep {
