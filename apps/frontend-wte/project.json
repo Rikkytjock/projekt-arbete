@@ -46,7 +46,7 @@
     },
     "docker-build": {
       "dependsOn": ["build:production"],
-      "command": "docker build -f apps/frontend-wte/Dockerfile . -t frontend-wte"
+      "command": "docker build -f apps/frontend-wte/Dockerfile . -t hankybree/frontend-wte:main"
     },
     "serve": {
       "executor": "@angular-devkit/build-angular:dev-server",
