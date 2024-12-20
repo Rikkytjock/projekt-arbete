@@ -45,7 +45,7 @@
       "defaultConfiguration": "production"
     },
     "docker-build": {
-      "dependsOn": ["build:production"],
+      "dependsOn": ["build"],
       "command": "docker build -f apps/frontend-wte/Dockerfile . -t hankybree/frontend-wte:main"
     },
     "serve": {
