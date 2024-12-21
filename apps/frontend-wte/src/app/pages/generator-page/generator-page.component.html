@@ -1,1 +1,31 @@
-<p>generator-page works!</p>
+<div id="generator-container">
+    <h2>Generate a Recipe</h2>
+
+    <!-- Testkod för att se hur det kan se. Måste ändras när vi lägger till TS.  -->
+    <div id="ingredient-container">
+        <h3>Select Ingredients:</h3>
+        <div id="ingredient-checkboxes">
+            <div class="ingredient-checkbox">
+                <input type="checkbox" value="Tomato">
+                <label for="ingredient-tomato">Tomato</label>
+            </div>
+            <div class="ingredient-checkbox">
+                <input type="checkbox" value="Carrot">
+                <label for="ingredient-carrot">Carrot</label>
+            </div>
+            <div class="ingredient-checkbox">
+                <input type="checkbox" value="Rice">
+                <label for="ingredient-rice">Rice</label>
+            </div>
+        </div>
+    </div>
+
+    <!-- Tycker denna ser ganska bra ut att använda sig av. Funkar inte just nu.   -->
+    <div id="time-selection">
+        <label for="time-select">Select Estimated Cooking Time:</label>
+        <input type="range" id="time-select" min="0" max="120" value="30">
+        <span id="time-display">15 minutes</span>
+    </div>
+
+    <button id="find-recipes-btn">Find Recipes</button>
+</div>
