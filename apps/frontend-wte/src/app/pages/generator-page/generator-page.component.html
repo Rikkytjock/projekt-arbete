@@ -1,31 +1,28 @@
 <div id="generator-container">
-    <h2>Generate a Recipe</h2>
+    <h2 id="generator-header">Find a Random Recipe</h2>
 
-    <!-- Testkod för att se hur det kan se. Måste ändras när vi lägger till TS.  -->
-    <div id="ingredient-container">
-        <h3>Select Ingredients:</h3>
-        <div id="ingredient-checkboxes">
-            <div class="ingredient-checkbox">
-                <input type="checkbox" value="Tomato">
-                <label for="ingredient-tomato">Tomato</label>
-            </div>
-            <div class="ingredient-checkbox">
-                <input type="checkbox" value="Carrot">
-                <label for="ingredient-carrot">Carrot</label>
-            </div>
-            <div class="ingredient-checkbox">
-                <input type="checkbox" value="Rice">
-                <label for="ingredient-rice">Rice</label>
-            </div>
+    <button id="random-recipe-btn" (click)="getRandomRecipe()">Get Random Recipe</button>
+
+    <div *ngIf="randomRecipe" id="recipe-display">
+        <!-- använder ngIf för att först se om randonRecipe är true (enndast då renderar vi receptet) -->
+        <h3>{{ randomRecipe.name }}</h3>
+        <img [src]="randomRecipe.img" [alt]="randomRecipe.name" class="recipe-image" />
+        <p>{{ randomRecipe.description }}</p>
+        <div>
+            <h4>Ingredients:</h4>
+            <ul>
+                <li *ngFor="let ingredient of randomRecipe.ingredients">
+                    {{ ingredient.quantity.amount }} {{ ingredient.quantity.unit }} - {{ ingredient.name }}
+                </li>
+            </ul>
+        </div>
+        <div>
+            <h4>Steps:</h4>
+            <ol>
+                <li *ngFor="let step of randomRecipe.steps">
+                    Step {{ step.stepNumber }}: {{ step.description }}
+                </li>
+            </ol>
         </div>
     </div>
-
-    <!-- Tycker denna ser ganska bra ut att använda sig av. Funkar inte just nu.   -->
-    <div id="time-selection">
-        <label for="time-select">Select Estimated Cooking Time:</label>
-        <input type="range" id="time-select" min="0" max="120" value="30">
-        <span id="time-display">15 minutes</span>
-    </div>
-
-    <button id="find-recipes-btn">Find Recipes</button>
 </div>
