@@ -1,6 +1,6 @@
 import { Route } from '@angular/router'
+import { RandomGeneratorComponent } from './components/random-generator/random-generator.component'
 import { AboutPageComponent } from './pages/about-page/about-page.component'
-import { GeneratorPageComponent } from './pages/generator-page/generator-page.component'
 import { PrivacyPageComponent } from './pages/privacy-page/privacy-page.component'
 import { RecipeListPageComponent } from './pages/recipe-list-page/recipe-list-page.component'
 import { RecipePageComponent } from './pages/recipe-list-page/recipe-page/recipe-page.component'
@@ -12,6 +12,6 @@ export const appRoutes: Route[] = [
   { path: 'recipes', component: RecipeListPageComponent },
   { path: 'recipes/:recipeId', component: RecipePageComponent },
   { path: 'privacy', component: PrivacyPageComponent },
-  { path: 'generator', component: GeneratorPageComponent },
+  { path: 'generator', component: RandomGeneratorComponent },
   { path: '', component: RecipeListPageComponent }
 ]

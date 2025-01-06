@@ -1,0 +1,26 @@
+<div id="generator-container">
+    <h2>Find a Random Recipe</h2>
+
+    <button id="find-random-recipe-btn" (click)="getRandomRecipe()">Get Random Recipe</button>
+    <div *ngIf="randomRecipe" id="recipe-display">
+        <h3>{{ randomRecipe.name }}</h3>
+        <img [src]="randomRecipe.img" [alt]="randomRecipe.name" class="recipe-image" />
+        <p>{{ randomRecipe.description }}</p>
+        <div>
+            <h4>Ingredients:</h4>
+            <ul>
+                <li *ngFor="let ingredient of randomRecipe.ingredients">
+                    {{ ingredient.quantity.amount }} {{ ingredient.quantity.unit }} - {{ ingredient.name }}
+                </li>
+            </ul>
+        </div>
+        <div>
+            <h4>Steps:</h4>
+            <ol>
+                <li *ngFor="let step of randomRecipe.steps">
+                    Step {{ step.stepNumber }}: {{ step.description }}
+                </li>
+            </ol>
+        </div>
+    </div>
+</div>

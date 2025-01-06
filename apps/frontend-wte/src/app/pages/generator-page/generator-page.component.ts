@@ -2,7 +2,7 @@ import { CommonModule } from '@angular/common'
 import { Component } from '@angular/core'
 import { RouterLink } from '@angular/router'
 import { IRecipe } from '@inglorious/core-types'
-import { recipeData } from '../../services/recipe/recipe.data'
+import { RecipeService } from '../../services/recipe/recipe.service'
 
 @Component({
   selector: 'app-generator-page',
@@ -20,11 +20,22 @@ export class GeneratorPageComponent {
   // Efter man trycker på generate recipe så kommer Random recipe ändras från null till ett Irecipe.
   // ** Är union operator den bästa att använda i detta fallet? Som jag förstår kan union operator vara antingen eller. Men inget starkt eller. Dvs. Det man assignar kan få båda värde?**
 
-  getRandomRecipe(): void {
-    const randomIndex = Math.floor(Math.random() * recipeData.length)
-    this.randomRecipe = recipeData[randomIndex]
+  constructor(private recipeService: RecipeService) {}
+
+  // Injectar recipeservice.
+
+  async getRandomRecipe(): Promise<void> {
+    this.randomRecipe = await this.recipeService.getRandomRecipe()
   }
 }
+
+// Lade till ett promise här med eftersom ESLint klagade.
+
+// getRandomRecipe(): void {
+//   const randomIndex = Math.floor(Math.random() * recipeData.length)
+//   this.randomRecipe = recipeData[randomIndex]
+// }
+// }
 
 // getRadnomRecipe är namnet på metod
 // skillnaden på funktion och metod

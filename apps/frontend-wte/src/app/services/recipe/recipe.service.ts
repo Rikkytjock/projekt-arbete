@@ -1,4 +1,5 @@
 import { Injectable } from '@angular/core'
+import { IRecipe } from '@inglorious/core-types'
 import { recipeData } from './recipe.data'
 
 @Injectable({
@@ -15,4 +16,11 @@ export class RecipeService {
 
     return recipe
   }
+
+  async getRandomRecipe(): Promise<IRecipe> {
+    const randomIndex = Math.floor(Math.random() * recipeData.length)
+    return recipeData[randomIndex]
+  }
 }
+
+// Lade till Promise eftersom eslint klagade att det behövdes.
