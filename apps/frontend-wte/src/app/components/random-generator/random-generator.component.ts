@@ -1,11 +1,15 @@
+import { CommonModule } from '@angular/common'
 import { Component } from '@angular/core'
+import { RouterLink } from '@angular/router'
 import { IRecipe } from '@inglorious/core-types'
 import { RecipeService } from '../../services/recipe/recipe.service'
 
 @Component({
-  selector: 'app-random-generator',
+  selector: 'app-generator-page',
+  standalone: true,
+  imports: [CommonModule, RouterLink],
   templateUrl: './random-generator.component.html',
-  styleUrls: ['./random-generator.component.scss']
+  styleUrl: './random-generator.component.scss'
 })
 export class RandomGeneratorComponent {
   randomRecipe: IRecipe | null = null

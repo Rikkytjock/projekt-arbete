@@ -1,8 +1,10 @@
 <div id="generator-container">
-    <h2>Find a Random Recipe</h2>
+    <h2 id="generator-header">Find a Random Recipe</h2>
 
-    <button id="find-random-recipe-btn" (click)="getRandomRecipe()">Get Random Recipe</button>
+    <button id="random-recipe-btn" (click)="getRandomRecipe()">Get Random Recipe</button>
+
     <div *ngIf="randomRecipe" id="recipe-display">
+        <!-- använder ngIf för att först se om randonRecipe är true (enndast då renderar vi receptet) -->
         <h3>{{ randomRecipe.name }}</h3>
         <img [src]="randomRecipe.img" [alt]="randomRecipe.name" class="recipe-image" />
         <p>{{ randomRecipe.description }}</p>
