@@ -4,15 +4,15 @@
   margin: 2rem auto;
   border-radius: 1rem;
   background-color: #ffffff;
-  box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.1); // Ger skugga runt hela card
+  box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.1);
   overflow: hidden;
   padding: 2rem;
-  box-sizing: border-box; // Gör så att padding inte gå mer än 100%
+  box-sizing: border-box;
 }
 
 .recipe-image {
   width: 100%;
-  aspect-ratio: 3 / 2; // Aspect Ratio gav bäst skala på bilden.
+  aspect-ratio: 3 / 2;
   border-radius: 0.625rem;
   object-fit: cover;
   display: block;
@@ -46,7 +46,7 @@
   gap: 2rem;
   margin-top: 2rem;
   width: 100%;
-  box-sizing: border-box; // Förhindrar overflow
+  box-sizing: border-box;
 }
 
 .ingredients,
@@ -56,7 +56,7 @@
   background-color: #f9f9f9;
   border-radius: 0.5rem;
   padding: 1rem;
-  box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.1); // mer skugga
+  box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.1);
 }
 
 .ingredients h2,
@@ -70,7 +70,7 @@
 
 .ingredients ul,
 .steps ol {
-  list-style-type: none; // Tar bort bulletpoints/1,2,3 i listor.
+  list-style-type: none;
   padding: 0;
   margin: 0;
 }
@@ -87,8 +87,6 @@
   font-weight: bold;
   color: #555;
 }
-
-// Back to all recipes btn
 
 #back-to-recipes-container {
   text-align: center;

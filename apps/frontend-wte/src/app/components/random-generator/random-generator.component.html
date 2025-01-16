@@ -4,8 +4,7 @@
     <button id="random-recipe-btn" (click)="getRandomRecipe()">Get Random Recipe</button>
 
     <div *ngIf="randomRecipe" id="recipe-display">
-        <!-- använder ngIf för att först se om randonRecipe är true (enndast då renderar vi receptet) -->
-        <h3>{{ randomRecipe.name }}</h3>
+        <h3 id="recipe-header-name">{{ randomRecipe.name }}</h3>
         <img [src]="randomRecipe.img" [alt]="randomRecipe.name" class="recipe-image" />
         <p>{{ randomRecipe.description }}</p>
         <div>

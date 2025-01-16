@@ -22,5 +22,3 @@ export class RecipeService {
     return recipeData[randomIndex]
   }
 }
-
-// Lade till Promise eftersom eslint klagade att det behövdes.
