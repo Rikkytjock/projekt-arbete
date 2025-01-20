@@ -10,6 +10,7 @@
   padding: 2rem;
   box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.1);
   overflow: hidden;
+  box-sizing: border-box; // Fixar horizontal scrolling
 }
 
 #recipe-header-name {
@@ -53,6 +54,11 @@
   display: block;
   border-radius: 0.5rem;
   object-fit: cover;
+}
+
+/* Spacer element */
+#quick-fix {
+  height: 10vh;
 }
 
 @media screen and (max-width: 700px) {

@@ -19,4 +19,8 @@ export class RandomGeneratorComponent {
   async getRandomRecipe(): Promise<void> {
     this.randomRecipe = await this.recipeService.getRandomRecipe()
   }
+
+  ngOnInit(): void {
+    this.randomRecipe = null // Reset the recipe whenever the component initializes
+  }
 }
