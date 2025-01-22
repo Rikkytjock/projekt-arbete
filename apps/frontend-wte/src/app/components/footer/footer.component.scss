@@ -1,9 +1,12 @@
 #footer-container {
+  position: relative;
+  width: 100%;
   text-align: center;
   background-color: #f4f4f9;
   padding: 0.5rem 0;
   border-top: 1px solid #e0e0e0;
   font-size: 0.75rem;
+  height: 8vh;
 }
 
 #links-container {

@@ -1,0 +1,9 @@
+#home-container {
+  min-height: 66vh;
+}
+
+@media screen and (max-width: 700px) {
+  #home-container {
+    min-height: 50vh;
+  }
+}
