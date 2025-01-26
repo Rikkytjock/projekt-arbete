@@ -1,4 +1,5 @@
 import { Injectable } from '@angular/core'
+import { IRecipe } from '@inglorious/core-types'
 import { recipeData } from './recipe.data'
 
 @Injectable({
@@ -14,5 +15,10 @@ export class RecipeService {
     if (!recipe) throw new Error('No recipe with that ID')
 
     return recipe
+  }
+
+  async getRandomRecipe(): Promise<IRecipe> {
+    const randomIndex = Math.floor(Math.random() * recipeData.length)
+    return recipeData[randomIndex]
   }
 }

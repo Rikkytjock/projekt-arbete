@@ -6,7 +6,7 @@ export const recipeData: IRecipe[] = [
     name: 'Daal Fry',
     description:
       'A rich, flavorful and nutritious lentil dish made with red lentils, tomatoes, and aromatic spices. Simple to prepare and packed with protein, perfect for a wholesome meal.',
-    img: 'assets/images/daal-fry.jpg',
+    img: 'assets/images/recipes/daal-fry.jpg',
     cookingTime: {
       hours: 0,
       minutes: 30
@@ -158,7 +158,7 @@ export const recipeData: IRecipe[] = [
     name: 'Beetroot Pasta',
     description:
       'A creamy and vibrant pasta dish made with beetroot, coconut milk, and aromatic spices. This vegetarian dish is colorful, nutritious, and full of flavor.',
-    img: 'assets/images/beetroot-pasta.jpg',
+    img: 'assets/images/recipes/beetroot-pasta.jpg',
     cookingTime: {
       hours: 0,
       minutes: 40
@@ -309,7 +309,7 @@ export const recipeData: IRecipe[] = [
     name: 'Chana Masala',
     description:
       'A rich, flavorful and spicy Indian curry made with chickpeas, tomatoes, and aromatic spices. This hearty dish is perfect to pair with rice or flatbreads.',
-    img: 'assets/images/chana-masala.jpg',
+    img: 'assets/images/recipes/chana-masala.jpg',
     cookingTime: {
       hours: 1,
       minutes: 20
@@ -477,7 +477,7 @@ export const recipeData: IRecipe[] = [
     name: 'Swedish Bread',
     description:
       'A soft, traditional Swedish bread made from whole wheat flour and flavored with cardamom. Perfect for breakfast or as a side with soups and stews.',
-    img: 'assets/images/bread.jpg',
+    img: 'assets/images/recipes/bread.jpg',
     cookingTime: {
       hours: 2,
       minutes: 15
@@ -633,7 +633,7 @@ export const recipeData: IRecipe[] = [
     name: 'Dosa',
     description:
       'A traditional Indian-style pancake made with a fermented batter of rice and lentils. Crispy, golden, and perfect for breakfast or dinner.',
-    img: 'assets/images/dosa.jpg',
+    img: 'assets/images/recipes/dosa.jpg',
     cookingTime: {
       hours: 12,
       minutes: 30
@@ -756,7 +756,7 @@ export const recipeData: IRecipe[] = [
     name: 'Chapati',
     description:
       'A classic Indian flatbread made with whole wheat flour, water, and salt. Soft, chewy, and perfect to accompany any curry or dal.',
-    img: 'assets/images/chapati.jpg',
+    img: 'assets/images/recipes/chapati.jpg',
     cookingTime: {
       hours: 1,
       minutes: 30
@@ -867,7 +867,7 @@ export const recipeData: IRecipe[] = [
     name: 'Idli',
     description:
       'Soft and fluffy steamed rice cakes, perfect for breakfast or as a light meal. Made from fermented rice and lentil batter. Note that the time to make this is including the fermentation time',
-    img: 'assets/images/idli.jpg',
+    img: 'assets/images/recipes/idli.jpg',
     cookingTime: {
       hours: 10, // Including soaking and fermentation time. Behövs skrivas så det syns i kort info mer?
       minutes: 20
@@ -985,7 +985,7 @@ export const recipeData: IRecipe[] = [
     name: 'Pani Puri',
     description:
       'Crispy hollow puris filled with spicy, tangy, and flavorful water along with mashed potatoes, chickpeas, and tangy chutneys.',
-    img: 'assets/images/pani-puri.jpg',
+    img: 'assets/images/recipes/pani-puri.jpg',
     cookingTime: {
       hours: 1,
       minutes: 30
@@ -1135,7 +1135,7 @@ export const recipeData: IRecipe[] = [
     name: 'Laddu',
     description:
       'A sweet and delicious Indian dessert made from roasted flour, sugar, and ghee, shaped into round balls.',
-    img: 'assets/images/laddu.jpg',
+    img: 'assets/images/recipes/laddu.jpg',
     cookingTime: {
       hours: 0,
       minutes: 45
@@ -1254,7 +1254,7 @@ export const recipeData: IRecipe[] = [
     name: 'Tofu & Vegetable Fried Rice',
     description:
       'A healthy and delicious fried rice dish made with tofu, colorful vegetables, and flavorful spices. Perfect for a wholesome lunch or dinner.',
-    img: 'assets/images/tofu-rice.jpg',
+    img: 'assets/images/recipes/tofu-rice.jpg',
     cookingTime: {
       hours: 0,
       minutes: 40
