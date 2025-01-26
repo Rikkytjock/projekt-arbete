@@ -5,7 +5,7 @@ import { IRecipe } from '@inglorious/core-types'
 import { RecipeService } from '../../services/recipe/recipe.service'
 
 @Component({
-  selector: 'app-generator-page',
+  selector: 'app-generator',
   standalone: true,
   imports: [CommonModule, RouterLink],
   templateUrl: './random-generator.component.html',

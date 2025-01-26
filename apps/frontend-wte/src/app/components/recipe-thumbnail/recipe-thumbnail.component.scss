@@ -18,15 +18,15 @@
 }
 
 #read-more-btn {
-  background-color: #f0f0f0; // Ljus bakgrund
+  background-color: #f0f0f0;
   color: #000000;
   font-weight: bold;
   border: none;
   padding: 0.25rem 0.75rem;
   border-radius: 0.25rem;
   text-decoration: none;
-  cursor: pointer; // Ändrar hur pekaren ser ut
-  transition: background-color 0.2s, transform 0.2s; // Ger den effekt och blir större.
+  cursor: pointer;
+  transition: background-color 0.2s, transform 0.2s;
   box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.1);
 }
 
@@ -50,9 +50,9 @@
   color: #ffffff;
   border: none;
   border-radius: 5px;
-  text-decoration: none; /* Tar bort linje vid länkar */
+  text-decoration: none;
   cursor: pointer;
-  transition: background-color 0.2s, transform 0.2s; /* Skön hoover effekt */
+  transition: background-color 0.2s, transform 0.2s;
 }
 
 #full-recipe-btn:hover {

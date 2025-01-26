@@ -32,14 +32,11 @@
 
 // GLOBAL STYLING
 
-html {
-  font-size: 62, 5%;
-  overflow-y: scroll;
-  overflow-x: hidden;
-}
-
+html,
 body {
   margin: 0;
   padding: 0;
+  height: 100%;
+  font-size: 62, 5%;
   font-family: 'opensans';
 }
