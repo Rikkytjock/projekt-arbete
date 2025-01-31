@@ -2,17 +2,28 @@
     <a routerLink="/" id="logo-link">
         <img id="header-image" src="/assets/images/logos/what-to-eat-logo7.png" alt="What to Eat Logo">
     </a>
-
-    <nav id="navbar">
+    <!-- DESKTOP -->
+    <nav id="desktop-navbar">
+        <ul id="desktop-menu">
+            <li><a routerLink="/">Home</a></li>
+            <li><a routerLink="/recipes">All Recipes</a></li>
+            <li><a routerLink="/aryuveda">Aryuveda</a></li>
+            <li><a routerLink="/about">About</a></li>
+        </ul>
+    </nav>
+    <!-- MOBILE -->
+    <nav id="mobile-navbar">
         <input type="checkbox" id="menu-toggle" />
         <label for="menu-toggle" id="hamburger-menu">
             <span></span>
             <span></span>
             <span></span>
+            <!-- span is for stlying of the lines on hamburger menu -->
         </label>
-        <ul id="menu">
+        <ul id="mobile-menu">
             <li><a routerLink="/">Home</a></li>
             <li><a routerLink="/recipes">All Recipes</a></li>
+            <!-- <li><a routerLink="">Aryuveda</a></li> -->
         </ul>
     </nav>
 </div>

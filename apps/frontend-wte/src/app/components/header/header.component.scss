@@ -8,6 +8,7 @@
   z-index: 1337;
 }
 
+// Logo + image
 #logo-link {
   display: inline-block;
 }
@@ -18,11 +19,39 @@
   object-fit: contain;
 }
 
-#navbar {
+// Desktop navbar
+
+#desktop-navbar {
+  display: flex;
+}
+
+#desktop-menu {
+  display: flex;
+  list-style: none;
+  gap: 1.5rem;
+  margin: 0;
+  padding: 0;
+}
+
+#desktop-menu li a {
+  text-decoration: none;
+  color: #007bff;
+  font-size: 1rem;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+#desktop-menu li a:hover {
+  color: #0056b3;
+}
+
+// Mobile navbar, hidden on desktop
+
+#mobile-navbar {
   position: relative;
 }
 
-#menu {
+#mobile-menu {
   display: none;
   flex-direction: column;
   position: absolute;
@@ -38,15 +67,15 @@
   z-index: 1000;
 }
 
-#menu li {
+#mobile-menu li {
   margin-bottom: 0.5rem;
 }
 
-#menu li:last-child {
+#mobile-menu li:last-child {
   margin-bottom: 0;
 }
 
-#menu li a {
+#mobile-menu li a {
   text-decoration: none;
   color: #fff;
   font-size: 1rem;
@@ -54,7 +83,7 @@
   transition: color 0.2s ease;
 }
 
-#menu li a:hover {
+#mobile-menu li a:hover {
   color: #ddd;
 }
 
@@ -80,18 +109,34 @@
   transition: all 0.3s ease;
 }
 
-#menu-toggle:checked + #hamburger-menu + #menu {
+// Above is styling for the lines on the hamburger menu
+
+#menu-toggle:checked ~ #mobile-menu {
   display: flex;
+}
+
+#mobile-navbar {
+  display: none; // gömmer hambruger menu i desktop.
 }
 
 // När menu toggle är checked så ändras den till flex och blir då visable
 
-@media screen and (max-width: 700px) {
-  #menu {
+@media screen and (max-width: 800px) {
+  /* Hide desktop navbar on mobile */
+  #desktop-navbar {
+    display: none;
+  }
+
+  /* Show mobile navbar on mobile */
+  #mobile-navbar {
+    display: block;
+  }
+
+  #mobile-menu {
     width: 8rem;
   }
 
-  #menu li a {
+  #mobile-menu li a {
     font-size: 0.9rem;
   }
 }
