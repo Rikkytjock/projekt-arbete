@@ -32,4 +32,11 @@ export class RecipePageComponent implements OnInit {
     const recipeId = this.route.snapshot.paramMap.get('recipeId')
     if (recipeId !== null) this.recipe = await this.recipeService.getById(recipeId)
   }
+
+  goBack(): void {
+    window.history.back()
+  }
 }
+
+// window.history.back är ett javascript objekt som tar en tillbaka ett steg.
+// goBack är namnet på funktionen, den är void eftersom det inte retunerar något
