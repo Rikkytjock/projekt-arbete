@@ -5,12 +5,15 @@
   border-top: 1px solid #e0e0e0;
   font-size: 0.75rem;
   width: 100%;
-  position: absolute;
   bottom: 0;
+  position: fixed;
   height: 3rem;
+  z-index: 1337;
 }
 
-// FOOTER IS BUGGED. STAYS IN THE SAME PLACE ALL THE TIME!!!!!
+body {
+  padding-bottom: 3rem;
+}
 
 #links-container {
   display: flex;
@@ -40,4 +43,10 @@
   margin: 0;
   font-size: 0.75rem;
   color: #666;
+}
+
+@media screen and (max-width: 700px) {
+  #footer-container {
+    height: 2.5rem;
+  }
 }
