@@ -1,30 +1,33 @@
 #header-container {
-  height: 8vh;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 0.9rem;
   background-color: var(--primary-color);
+  height: 2.5rem;
   position: relative;
   z-index: 1337;
 }
 
+// Logo + image
 #logo-link {
   display: inline-block;
 }
 
 #header-image {
-  width: 7rem;
+  width: 6rem;
   height: auto;
   object-fit: contain;
 }
 
-#navbar {
+// Mobile navbar, hidden on desktop
+
+#mobile-navbar {
   position: relative;
 }
 
-#menu {
-  display: none;
+#mobile-menu {
+  display: none; // gömmer menyn (efter man tryckt på linjerna) som default.
   flex-direction: column;
   position: absolute;
   top: 100%;
@@ -39,15 +42,15 @@
   z-index: 1000;
 }
 
-#menu li {
+#mobile-menu li {
   margin-bottom: 0.5rem;
 }
 
-#menu li:last-child {
+#mobile-menu li:last-child {
   margin-bottom: 0;
 }
 
-#menu li a {
+#mobile-menu li a {
   text-decoration: none;
   color: #fff;
   font-size: 1rem;
@@ -55,7 +58,7 @@
   transition: color 0.2s ease;
 }
 
-#menu li a:hover {
+#mobile-menu li a:hover {
   color: #ddd;
 }
 
@@ -73,6 +76,7 @@
   z-index: 1000;
 }
 
+// Styling of hamburger menu
 #hamburger-menu span {
   display: block;
   height: 0.25rem;
@@ -81,18 +85,29 @@
   transition: all 0.3s ease;
 }
 
-#menu-toggle:checked + #hamburger-menu + #menu {
-  display: flex;
+// Toggle funktionalitet på MOBILE.
+#menu-toggle:checked + #hamburger-menu + #mobile-menu {
+  display: flex; /* Shows menu when checkbox is checked */
 }
 
-// När menu toggle är checked så ändras den till flex och blir då visable
+// Hover funktioalitet på DESKTOP.
+@media screen and (min-width: 801px) {
+  #hamburger-menu:hover + #mobile-menu,
+  #mobile-menu:hover {
+    display: flex;
+  }
+}
 
-@media screen and (max-width: 700px) {
-  #menu {
+@media screen and (max-width: 800px) {
+  #mobile-navbar {
+    display: block;
+  }
+
+  #mobile-menu {
     width: 8rem;
   }
 
-  #menu li a {
+  #mobile-menu li a {
     font-size: 0.9rem;
   }
 }
