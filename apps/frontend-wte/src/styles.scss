@@ -39,4 +39,33 @@ body {
   height: 100%;
   font-size: 62, 5%;
   font-family: 'opensans';
+  background-color: var(--background-color);
 }
+
+// Colour theme 1 (test)
+
+// :root {
+//   --primary-color: #007bff; // main colour
+//   --secondary-color: #ff6b6b; // secondary/contrast colour
+//   --tertiary-color: #ffc107; // Colour of hamburger menu
+//   --quaternary-color: #e0e0e0; // Button colour
+//   --text-color: #333333; /* Text Color (Dark Gray for readability) */
+//   --background-color: #f9f9f9; // overall background
+// }
+
+// Colour theme 2 (test)
+
+:root {
+  --primary-color: #a8e6cf; /* main colour */
+  --secondary-color: #faf3dd; /* secondary/contrast colour */
+  --tertiary-color: #379683; /* Citrus Yellow - Hamburger menu/icons (NEW) */
+  --quaternary-color: #379683; // button
+  --text-color: #333333; /* Rich Brown - Enhanced readability (NEW) */
+  --background-color: #fdfdfd; /* Light Cream - Overall background (NEW) */
+}
+
+// copy pasta for own simplicty
+// background-color: var(--primary-color);
+// background-color: var(--secondary-color);
+// background-color: var(--tertiary-color);
+// background-color: var(--quaternary-color);
