@@ -22,3 +22,5 @@ export class RecipeService {
     return recipeData[randomIndex]
   }
 }
+
+// yarn nx serve frontend-webshop-wte

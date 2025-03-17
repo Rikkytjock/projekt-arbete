@@ -1,0 +1,188 @@
+/* ========== HOME PAGE STYLING ========== */
+#home-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  background-color: var(--primary-color);
+}
+
+/* ========== BANNER STYLING ========== */
+#home-banner {
+  position: relative;
+  width: 100%;
+  height: 50vh;
+  background: url("/assets/images/items/apple.jpg") no-repeat center center / cover;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-start;
+  text-align: left;
+  color: white;
+  padding: 2rem;
+}
+
+#banner-content {
+  display: flex;
+  flex-direction: column;
+}
+
+#order-btn {
+  display: inline-block;
+  background-color: var(--secondary-color);
+  color: white;
+  font-size: 1.2rem;
+  font-weight: bold;
+  padding: 0.7rem 1.3rem;
+  border-radius: 0.5rem;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+#order-btn:hover {
+  background-color: var(--tertiary-color);
+}
+
+/* Responsive Design */
+@media screen and (max-width: 50rem) {
+  #home-banner {
+    padding: 1rem;
+  }
+
+  #order-btn {
+    font-size: 1rem;
+    padding: 0.6rem 1rem;
+  }
+}
+
+/* ========== FARM FRESH FOOD SECTION ========== */
+#farm-fresh {
+  text-align: center;
+  padding: 4rem 1rem;
+}
+
+#farm-fresh h2 {
+  font-size: 2.8rem;
+  font-weight: bold;
+  color: var(--tertiary-color);
+  margin-bottom: 2rem;
+}
+
+#food-container {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+  max-width: 62.5rem;
+  margin: auto;
+}
+
+.food-card {
+  background-color: var(--secondary-color);
+  padding: 1.5rem;
+  border-radius: 0.5rem;
+  text-align: center;
+  width: 14rem;
+  box-shadow: 0 0.25rem 0.625rem rgba(0, 0, 0, 0.1);
+}
+
+.food-card img {
+  width: 100%;
+  height: 10rem;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.food-card h3 {
+  margin: 1rem 0 0.5rem;
+}
+
+.food-card p {
+  font-size: 0.9rem;
+}
+
+.food-card a {
+  display: inline-block;
+  background-color: var(--tertiary-color);
+  color: white;
+  font-size: 1rem;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.food-card a:hover {
+  background-color: var(--secondary-color);
+}
+
+/* ========== WHO WE ARE & SHIPPING DETAILS (images still bugged) ========== */
+.section-wrapper {
+  background-color: var(--primary-color);
+  padding: 4rem 1rem;
+  text-align: center;
+}
+
+.section-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+  max-width: 62.5rem;
+  margin: 0 auto;
+}
+
+.section-text {
+  flex: 1; 
+  text-align: left;
+}
+
+.section-text h2 {
+  font-size: 2.3rem;
+  font-weight: bold;
+  color: var(--tertiary-color);
+  margin-bottom: 1rem;
+}
+
+.section-text p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: var(--text-color);
+}
+
+.section-image {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end; 
+}
+
+#who-we-are img,
+#shipping-details img {
+  width: 22rem; /* ✅ Maintains fixed width */
+  height: 14rem; /* ✅ Maintains fixed height */
+  object-fit: cover; 
+  border-radius: 50%;
+  box-shadow: 0 0.25rem 0.625rem rgba(0, 0, 0, 0.1);
+}
+
+/* ========== RESPONSIVE DESIGN ========== */
+@media screen and (max-width: 50rem) {
+  #food-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .section-content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .section-text {
+    text-align: center;
+  }
+
+  #who-we-are img,
+  #shipping-details img {
+    width: 18rem;
+    height: 12rem;
+  }
+}

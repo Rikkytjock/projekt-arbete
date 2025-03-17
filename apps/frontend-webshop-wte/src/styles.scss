@@ -1,1 +1,34 @@
-/* You can add global styles to this file, and also import other style files */
+:root {
+    --primary-color: #FFFFFF;  /* White - Clean Background */
+    --secondary-color: #A8E6CF;  /* Mint Green - Accent & Buttons */
+    --tertiary-color: #000000;  /* Black - Text & Contrast */
+}
+
+/* ✅ Global Button Styles */
+button,
+.button {
+    background-color: var(--tertiary-color);
+    color: var(--tertiary-color);
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+}
+
+/* ✅ Hover Effects */
+button:hover,
+.button:hover,
+a:hover {
+    color: var(--tertiary-color);
+}
+
+/* ✅ Links */
+a {
+    color: var(--tertiary-color);
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.2s ease-in-out;
+}

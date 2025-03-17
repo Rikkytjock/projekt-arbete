@@ -1,0 +1,13 @@
+<div class="item-card">
+  <img class="item-image" src="{{ item.img }}" alt="{{ item.name }}">
+  <div class="item-content">
+      <h1 class="item-title">{{ item.name }}</h1>
+      <p class="item-description">{{ (item.description) }}</p>
+  </div>
+  <div class="item-details">
+      <span class="item-price">{{ item.price.amount }} / {{ item.price.unit }}</span>
+  </div>
+  <div id="view-item-container">
+      <a id="view-item-btn" [routerLink]="['/items', item.id]">View Details</a>
+  </div>
+</div>

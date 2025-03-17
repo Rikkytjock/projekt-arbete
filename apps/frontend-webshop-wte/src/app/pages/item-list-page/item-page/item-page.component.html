@@ -1,0 +1,10 @@
+<div class="item-card">
+    <img class="item-image" src="{{ item.img }}" alt="{{ item.name }}">
+    <div class="item-content">
+        <h1 class="item-title">{{ item.name }}</h1>
+        <p class="item-description">{{ item.description }}</p>
+    </div>
+    <div id="back-to-items-container">
+        <a id="back-to-items-btn" (click)="goBack()">Go Back</a>
+    </div>
+</div>

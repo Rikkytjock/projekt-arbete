@@ -1,0 +1,150 @@
+/* ========== HERO SECTION ========== */
+#about-hero {
+  position: relative;
+  width: 100%;
+  height: 50vh;
+  background: url("/assets/images/diverse/banana.jpg") no-repeat center center / cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+}
+
+#hero-content {
+  background: rgba(0, 0, 0, 0.5);
+  padding: 2rem;
+  border-radius: 10px;
+}
+
+#hero-content h1 {
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+#hero-content p {
+  font-size: 1.2rem;
+  margin-top: 0.5rem;
+}
+
+/* ========== ABOUT US SECTION ========== */
+#about-content {
+  background-color: var(--primary-color);
+  padding: 4rem 1rem;
+  text-align: center;
+}
+
+#about-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+#about-text {
+  max-width: 500px;
+  text-align: left;
+}
+
+#about-text h2 {
+  font-size: 2.3rem;
+  font-weight: bold;
+  color: var(--tertiary-color);
+  margin-bottom: 1rem;
+}
+
+#about-text p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: var(--text-color);
+}
+
+#about-image img {
+  width: 100%;
+  max-width: 400px;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 50%;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* ========== OUR MISSION SECTION ========== */
+#mission {
+  background-color: var(--secondary-color);
+  padding: 4rem 1rem;
+  text-align: center;
+}
+
+#mission-content {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+#mission-content h2 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: var(--tertiary-color);
+  margin-bottom: 1rem;
+}
+
+#mission-content p {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  color: var(--text-color);
+}
+
+/* ========== FOUNDERS SECTION ========== */
+#founders {
+  background-color: var(--primary-color);
+  padding: 4rem 1rem;
+  text-align: center;
+}
+
+#founders-wrapper {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+#founders-text h2 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: var(--tertiary-color);
+  margin-bottom: 1rem;
+}
+
+#founders-text p {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  color: var(--text-color);
+}
+
+/* ========== RESPONSIVE DESIGN ========== */
+@media screen and (max-width: 800px) {
+  #about-wrapper {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  #about-text {
+    text-align: center;
+  }
+
+  #about-image img {
+    max-width: 300px;
+    height: 200px;
+  }
+
+  #hero-content h1 {
+    font-size: 2.5rem;
+  }
+
+  #mission-content h2, #founders-text h2 {
+    font-size: 2rem;
+  }
+
+  #mission-content p, #founders-text p {
+    font-size: 1.1rem;
+  }
+}
