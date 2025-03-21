@@ -3,7 +3,7 @@
   max-width: 50rem;
   margin: 2rem auto;
   border-radius: 1rem;
-  background-color: var(--primary-color);
+  background-color: var(--secondary-color);
   box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.1);
   overflow: hidden;
   padding: 2rem;
@@ -18,6 +18,10 @@
   display: block;
   margin-bottom: 1rem;
   max-width: 100%;
+}
+
+.item-price {
+  font-size: 1.5rem;
 }
 
 .item-content {
@@ -50,14 +54,14 @@
   font-size: 1rem;
   font-weight: bold;
   color: #ffffff;
-  background-color: var(--quaternary-color);
+  background-color: var(--tertiary-color);
   border-radius: 0.5rem;
   text-decoration: none;
   transition: background-color 0.2s, transform 0.2s;
 }
 
 #back-to-items-btn:hover {
-  background-color: #0056b3;
+  background-color: var(--quaternary-color);
   transform: scale(1.05);
 }
 
