@@ -1,0 +1,71 @@
+.payment-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 85vh;
+  padding: 2rem;
+  background-color: var(--primary-color);
+}
+
+.payment-container {
+  width: 100%;
+  max-width: 35rem;
+  background-color: var(--secondary-color);
+  padding: 2.5rem;
+  border-radius: 1rem;
+  box-shadow: 0 0.25rem 1rem rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  color: var(--quinary-color);
+  text-align: center;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  font-weight: 600;
+  margin-bottom: 0.4rem;
+  color: var(--quinary-color);
+}
+
+input {
+  padding: 0.7rem 1rem;
+  font-size: 1rem;
+  border-radius: 0.5rem;
+  border: 1px solid #ccc;
+  background-color: #fff;
+  transition: border-color 0.2s ease-in-out;
+}
+
+input:focus {
+  border-color: var(--tertiary-color);
+  outline: none;
+}
+
+button {
+  padding: 0.9rem;
+  font-size: 1rem;
+  font-weight: bold;
+  background-color: var(--tertiary-color);
+  color: white;
+  border: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+button:hover {
+  background-color: var(--quaternary-color);
+}

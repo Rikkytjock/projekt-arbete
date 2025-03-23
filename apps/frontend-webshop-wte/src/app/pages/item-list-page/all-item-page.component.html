@@ -1,6 +1,12 @@
-<div id="header-text">
-  <h3>All Available Items</h3>
-</div>
+<!-- Hero Section -->
+<section class="item-hero">
+  <div class="hero-content">
+    <h1>All Items</h1>
+    <p>Fresh, organic, and wholesome products just for you.</p>
+  </div>
+</section>
+
+<!-- Item List -->
 <div id="item-list-container">
   <div class="item-box" *ngFor="let item of items">
     <app-item-thumbnail [item]="item"></app-item-thumbnail>

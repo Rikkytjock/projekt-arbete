@@ -1,3 +1,34 @@
+/* Hero Section */
+.item-hero {
+  position: relative;
+  width: 100%;
+  height: 50vh;
+  background: url('/assets/images/diverse/veg-market.jpg') no-repeat center center / cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.hero-content {
+  background: rgba(0, 0, 0, 0.5);
+  padding: 2rem;
+  border-radius: 10px;
+  color: white;
+}
+
+.hero-content h1 {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.hero-content p {
+  font-size: 1.2rem;
+}
+
+/* Item Grid Section */
 #item-list-container {
   display: flex;
   flex-wrap: wrap;
@@ -27,16 +58,4 @@
 .item-box:hover {
   transform: scale(1.05);
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-}
-
-#header-text {
-  text-align: center;
-  font-size: 3rem;
-  font-family: 'avenir';
-  margin-bottom: 1.5rem;
-  font-weight: bold;
-  color: #333333;
-  text-align: center;
-  margin-bottom: 1.5rem;
-  letter-spacing: 0.05rem;
 }

@@ -11,5 +11,3 @@ export interface IPrice {
   amount: number
   unit: 'kg'
 }
-
-// EXPORTERAR IItem, men det hittar fortfarande inte IMPORT????

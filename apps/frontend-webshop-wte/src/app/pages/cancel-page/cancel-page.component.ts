@@ -3,10 +3,10 @@ import { Component } from '@angular/core'
 import { RouterLink } from '@angular/router'
 
 @Component({
-  selector: 'app-about-page',
+  selector: 'app-cancel-page',
   standalone: true,
   imports: [CommonModule, RouterLink],
-  templateUrl: './about-page.component.html',
-  styleUrl: './about-page.component.scss'
+  templateUrl: './cancel-page.component.html',
+  styleUrl: './cancel-page.component.scss'
 })
-export class AboutPageComponent {}
+export class CancelPageComponent {}

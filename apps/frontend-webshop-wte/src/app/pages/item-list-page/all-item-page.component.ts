@@ -1,8 +1,8 @@
-import { CommonModule } from '@angular/common';
-import { Component, OnInit } from '@angular/core';
-import { IItem } from '@inglorious/core-types';
-import { ItemThumbnailComponent } from '../../components/item-thumbnail/item-thumbnail.component';
-import { ItemService } from '../../item/item.service';
+import { CommonModule } from '@angular/common'
+import { Component, OnInit } from '@angular/core'
+import { IItem } from '@inglorious/core-types'
+import { ItemThumbnailComponent } from '../../components/item-thumbnail/item-thumbnail.component'
+import { ItemService } from '../../services/item.service'
 
 @Component({
   selector: 'app-all-item-page',
@@ -13,11 +13,11 @@ import { ItemService } from '../../item/item.service';
   styleUrl: './all-item-page.component.scss'
 })
 export class AllItemPageComponent implements OnInit {
-  items: IItem[] = [];
+  items: IItem[] = []
 
   constructor(private itemService: ItemService) {}
 
   async ngOnInit() {
-    this.items = await this.itemService.getAll();
+    this.items = await this.itemService.getAll()
   }
 }

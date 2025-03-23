@@ -2,6 +2,7 @@ import { CommonModule } from '@angular/common'
 import { Component, Input } from '@angular/core'
 import { RouterLink } from '@angular/router'
 import { IItem } from '@inglorious/core-types'
+import { CartService } from '../../services/cart.service'
 
 @Component({
   selector: 'app-item-thumbnail',
@@ -23,10 +24,10 @@ export class ItemThumbnailComponent {
     }
   }
 
-  //  shortenDescriptionLength = 50;
-  //  showFullDescription = false;
-  //
-  //  shortenDescription(description: string) {
-  //    return shortenString(description, this.shortenDescriptionLength);
-  //  }
+  constructor(private cartService: CartService) {}
+
+  addToCart(): void {
+    this.cartService.addToCart(this.item)
+    alert(`${this.item.name} added to cart!`)
+  }
 }

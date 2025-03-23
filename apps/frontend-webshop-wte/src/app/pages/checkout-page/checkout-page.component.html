@@ -1,0 +1,24 @@
+<div class="checkout-container" *ngIf="cartItems.length > 0; else emptyCart">
+    <h1>Checkout</h1>
+
+    <div class="checkout-item" *ngFor="let item of cartItems; let i = index">
+        <img [src]="item.img" alt="{{ item.name }}" />
+        <div class="item-info">
+            <h2>{{ item.name }}</h2>
+            <p>{{ item.price.amount }} € / {{ item.price.unit }}</p>
+        </div>
+        <button class="remove-btn" (click)="removeItem(i)">Remove</button>
+    </div>
+
+    <div class="checkout-total">
+        <h3>Total: {{ totalPrice }} €</h3>
+        <button class="checkout-btn" (click)="completeCheckout()">Complete Purchase</button>
+    </div>
+</div>
+
+<ng-template #emptyCart>
+    <div class="empty-cart-message">
+        <h2>Your cart is empty 🛒</h2>
+        <p>Browse items and add something to your cart!</p>
+    </div>
+</ng-template>

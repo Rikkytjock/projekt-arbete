@@ -2,12 +2,13 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: var(--secondary-color); /* Colour of the cards */
+  background-color: var(--secondary-color);
   padding: 1.5rem;
   border-radius: 0.5rem;
   text-align: center;
   width: 15rem;
   box-shadow: 0 0.25rem 0.625rem rgba(0, 0, 0, 0.1);
+  margin: 2rem auto;
 }
 
 /* Image */
@@ -24,13 +25,13 @@
   font-size: 1.5rem;
   font-weight: bold;
   margin-bottom: 0.5rem;
-  color: var(--quinary-color); /* colour of text */
+  color: var(--quinary-color);
 }
 
 /* Description */
 .item-description {
   font-size: 1rem;
-  color: var(--quinary-color); /* colour of text */
+  color: var(--quinary-color);
   margin-bottom: 1rem;
 }
 
@@ -38,7 +39,7 @@
 .item-price {
   font-size: 1.2rem;
   font-weight: bold;
-  color: var(--tertiary-color); /* Colour of the buttons */
+  color: var(--tertiary-color);
   margin-bottom: 1rem;
 }
 
@@ -52,7 +53,7 @@
 
 /* View Details Link */
 .view-details-link {
-  color: var(--quinary-color); /* black */
+  color: var(--quinary-color);
   font-size: 1.05rem;
   font-weight: bold;
   text-decoration: underline;
@@ -61,12 +62,12 @@
 }
 
 .view-details-link:hover {
-  color: var(--quaternary-color); /* Colour of hoover */
+  color: var(--quaternary-color);
 }
 
 /* Add to Cart Button */
 .add-to-cart-btn {
-  background-color: var(--tertiary-color); /* Colour of the buttons */
+  background-color: var(--tertiary-color);
   color: #ffffff;
   font-weight: bold;
   padding: 0.6rem 1rem;
@@ -77,7 +78,7 @@
 }
 
 .add-to-cart-btn:hover {
-  background-color: var(--quaternary-color); /* Colour of hoover */
+  background-color: var(--quaternary-color);
 }
 
 /* Responsive */

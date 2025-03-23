@@ -1,188 +1,143 @@
-/* ========== HOME PAGE STYLING ========== */
-#home-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 100%;
-  background-color: var(--primary-color);
-}
-
-/* ========== BANNER STYLING ========== */
-#home-banner {
+/* Hero Section */
+.home-hero {
   position: relative;
   width: 100%;
   height: 50vh;
-  background: url("/assets/images/items/apple.jpg") no-repeat center center / cover;
+  background: url('/assets/images/diverse/farmland.jpg') no-repeat center center / cover;
   display: flex;
-  align-items: flex-end;
-  justify-content: flex-start;
-  text-align: left;
-  color: white;
-  padding: 2rem;
-}
-
-#banner-content {
-  display: flex;
-  flex-direction: column;
-}
-
-#order-btn {
-  display: inline-block;
-  background-color: var(--secondary-color);
-  color: white;
-  font-size: 1.2rem;
-  font-weight: bold;
-  padding: 0.7rem 1.3rem;
-  border-radius: 0.5rem;
-  text-decoration: none;
-  transition: background-color 0.3s ease;
-}
-
-#order-btn:hover {
-  background-color: var(--tertiary-color);
-}
-
-/* Responsive Design */
-@media screen and (max-width: 50rem) {
-  #home-banner {
-    padding: 1rem;
-  }
-
-  #order-btn {
-    font-size: 1rem;
-    padding: 0.6rem 1rem;
-  }
-}
-
-/* ========== FARM FRESH FOOD SECTION ========== */
-#farm-fresh {
+  align-items: center;
+  justify-content: center;
   text-align: center;
-  padding: 4rem 1rem;
-}
-
-#farm-fresh h2 {
-  font-size: 2.8rem;
-  font-weight: bold;
-  color: var(--tertiary-color);
   margin-bottom: 2rem;
 }
 
-#food-container {
-  display: flex;
-  justify-content: center;
-  gap: 1.5rem;
-  flex-wrap: wrap;
-  max-width: 62.5rem;
-  margin: auto;
+.hero-content {
+  background: rgba(255, 255, 255, 0.85);
+  padding: 2rem;
+  border-radius: 10px;
+  color: black;
+  max-width: 600px;
 }
 
-.food-card {
-  background-color: var(--secondary-color);
-  padding: 1.5rem;
+.hero-content h1 {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.hero-content p {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+}
+
+.hero-btn {
+  background-color: var(--tertiary-color);
+  color: white;
+  font-weight: bold;
+  padding: 0.75rem 1.5rem;
   border-radius: 0.5rem;
-  text-align: center;
-  width: 14rem;
-  box-shadow: 0 0.25rem 0.625rem rgba(0, 0, 0, 0.1);
+  text-decoration: none;
+  display: inline-block;
+  transition: background-color 0.2s ease;
 }
 
-.food-card img {
+.hero-btn:hover {
+  background-color: var(--quaternary-color);
+}
+
+/* Category Section (Fruits & Vegetables) */
+.category-section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  padding: 2rem;
+  background-color: var(--primary-color);
+}
+
+.category-box {
+  width: 18rem;
+  background-color: var(--secondary-color);
+  border-radius: 10px;
+  box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.1);
+  padding: 1.5rem 1rem;
+  text-align: center;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.category-box:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+}
+
+.category-box img {
   width: 100%;
   height: 10rem;
   object-fit: cover;
   border-radius: 50%;
-}
-
-.food-card h3 {
-  margin: 1rem 0 0.5rem;
-}
-
-.food-card p {
-  font-size: 0.9rem;
-}
-
-.food-card a {
-  display: inline-block;
-  background-color: var(--tertiary-color);
-  color: white;
-  font-size: 1rem;
-  padding: 0.5rem 1rem;
-  border-radius: 0.5rem;
-  text-decoration: none;
-  transition: background-color 0.3s ease;
-}
-
-.food-card a:hover {
-  background-color: var(--secondary-color);
-}
-
-/* ========== WHO WE ARE & SHIPPING DETAILS (images still bugged) ========== */
-.section-wrapper {
-  background-color: var(--primary-color);
-  padding: 4rem 1rem;
-  text-align: center;
-}
-
-.section-content {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 2rem;
-  max-width: 62.5rem;
-  margin: 0 auto;
-}
-
-.section-text {
-  flex: 1; 
-  text-align: left;
-}
-
-.section-text h2 {
-  font-size: 2.3rem;
-  font-weight: bold;
-  color: var(--tertiary-color);
   margin-bottom: 1rem;
 }
 
-.section-text p {
+.category-box h2 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: var(--quinary-color);
+  margin-bottom: 0.5rem;
+}
+
+.category-box p {
+  font-size: 1rem;
+  color: var(--quinary-color);
+  margin-bottom: 1rem;
+}
+
+.explore-btn {
+  background-color: var(--tertiary-color);
+  color: #ffffff;
+  font-weight: bold;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  text-decoration: none;
+  display: inline-block;
+  transition: background-color 0.2s ease;
+}
+
+.explore-btn:hover {
+  background-color: var(--quaternary-color);
+}
+
+/* Info Boxes */
+.info-box {
+  background-color: var(--secondary-color);
+  padding: 2rem;
+  margin: 2rem auto;
+  max-width: 50rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.info-box h2 {
+  font-size: 2rem;
+  font-weight: bold;
+  color: var(--quinary-color);
+  margin-bottom: 1rem;
+}
+
+.info-box p {
   font-size: 1.1rem;
+  color: var(--quinary-color);
   line-height: 1.6;
-  color: var(--text-color);
 }
 
-.section-image {
-  flex: 1;
-  display: flex;
-  justify-content: flex-end; 
-}
-
-#who-we-are img,
-#shipping-details img {
-  width: 22rem; /* ✅ Maintains fixed width */
-  height: 14rem; /* ✅ Maintains fixed height */
-  object-fit: cover; 
-  border-radius: 50%;
-  box-shadow: 0 0.25rem 0.625rem rgba(0, 0, 0, 0.1);
-}
-
-/* ========== RESPONSIVE DESIGN ========== */
+/* Responsive */
 @media screen and (max-width: 50rem) {
-  #food-container {
-    flex-direction: column;
-    align-items: center;
+  .hero-content h1 {
+    font-size: 2.2rem;
   }
 
-  .section-content {
-    flex-direction: column;
-    text-align: center;
-  }
-
-  .section-text {
-    text-align: center;
-  }
-
-  #who-we-are img,
-  #shipping-details img {
-    width: 18rem;
-    height: 12rem;
+  .category-box {
+    width: 90%;
+    max-width: 18rem;
   }
 }

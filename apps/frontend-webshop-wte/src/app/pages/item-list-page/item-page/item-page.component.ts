@@ -2,7 +2,8 @@ import { CommonModule, Location } from '@angular/common'
 import { Component, OnInit } from '@angular/core'
 import { ActivatedRoute, RouterLink } from '@angular/router'
 import { IItem } from '@inglorious/core-types'
-import { ItemService } from '../../../item/item.service'
+import { CartService } from '../../../services/cart.service'
+import { ItemService } from '../../../services/item.service'
 
 @Component({
   selector: 'app-item-page',
@@ -16,7 +17,7 @@ export class ItemPageComponent implements OnInit {
   item: IItem = {
     id: '',
     name: '',
-    shortDescription: '', // ✅ Add this line
+    shortDescription: '',
     description: '',
     img: '',
     price: {
@@ -25,7 +26,12 @@ export class ItemPageComponent implements OnInit {
     }
   }
 
-  constructor(private itemService: ItemService, private route: ActivatedRoute, private location: Location) {}
+  constructor(
+    private itemService: ItemService,
+    private route: ActivatedRoute,
+    private location: Location,
+    private cartService: CartService
+  ) {}
 
   async ngOnInit() {
     const itemId = this.route.snapshot.paramMap.get('itemId')
@@ -34,5 +40,10 @@ export class ItemPageComponent implements OnInit {
 
   goBack(): void {
     this.location.back()
+  }
+
+  addToCart(): void {
+    this.cartService.addToCart(this.item)
+    alert(`${this.item.name} added to cart`)
   }
 }

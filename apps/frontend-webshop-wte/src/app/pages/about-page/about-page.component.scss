@@ -3,7 +3,7 @@
   position: relative;
   width: 100%;
   height: 50vh;
-  background: url("/assets/images/diverse/banana.jpg") no-repeat center center / cover;
+  background: url('/assets/images/diverse/farmland.jpg') no-repeat center center / cover;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -51,7 +51,7 @@
 #about-text h2 {
   font-size: 2.3rem;
   font-weight: bold;
-  color: var(--tertiary-color);
+  color: var(--quinary-color); // black
   margin-bottom: 1rem;
 }
 
@@ -68,56 +68,6 @@
   object-fit: cover;
   border-radius: 50%;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-}
-
-/* ========== OUR MISSION SECTION ========== */
-#mission {
-  background-color: var(--secondary-color);
-  padding: 4rem 1rem;
-  text-align: center;
-}
-
-#mission-content {
-  max-width: 800px;
-  margin: 0 auto;
-}
-
-#mission-content h2 {
-  font-size: 2.5rem;
-  font-weight: bold;
-  color: var(--tertiary-color);
-  margin-bottom: 1rem;
-}
-
-#mission-content p {
-  font-size: 1.2rem;
-  line-height: 1.6;
-  color: var(--text-color);
-}
-
-/* ========== FOUNDERS SECTION ========== */
-#founders {
-  background-color: var(--primary-color);
-  padding: 4rem 1rem;
-  text-align: center;
-}
-
-#founders-wrapper {
-  max-width: 800px;
-  margin: 0 auto;
-}
-
-#founders-text h2 {
-  font-size: 2.5rem;
-  font-weight: bold;
-  color: var(--tertiary-color);
-  margin-bottom: 1rem;
-}
-
-#founders-text p {
-  font-size: 1.2rem;
-  line-height: 1.6;
-  color: var(--text-color);
 }
 
 /* ========== RESPONSIVE DESIGN ========== */
@@ -138,13 +88,5 @@
 
   #hero-content h1 {
     font-size: 2.5rem;
-  }
-
-  #mission-content h2, #founders-text h2 {
-    font-size: 2rem;
-  }
-
-  #mission-content p, #founders-text p {
-    font-size: 1.1rem;
   }
 }
