@@ -3,6 +3,7 @@ import { Component, OnInit } from '@angular/core'
 import { Router } from '@angular/router'
 import { IItem } from '@inglorious/core-types'
 import { CartService } from '../../services/cart.service'
+import { StripeService } from '../../services/stripe.service' // stripe importen
 
 @Component({
   selector: 'app-checkout-page',
@@ -15,7 +16,7 @@ export class CheckoutPageComponent implements OnInit {
   cartItems: IItem[] = []
   totalPrice = '0.00'
 
-  constructor(private cartService: CartService, private router: Router) {}
+  constructor(private cartService: CartService, private router: Router, private stripeService: StripeService) {} //lade till stripe service i constructor
 
   ngOnInit(): void {
     this.loadCart()
@@ -37,6 +38,16 @@ export class CheckoutPageComponent implements OnInit {
   }
 
   completeCheckout(): void {
-    this.router.navigate(['/payment'])
+    if (this.cartItems.length === 0) return
+
+    this.stripeService.createCheckoutSession(this.cartItems).subscribe({
+      next: (res) => {
+        window.location.href = res.url
+      },
+      error: (err) => {
+        console.error('Stripe checkout failed:', err)
+        alert('Something went wrong while redirecting to Stripe.')
+      }
+    })
   }
 }

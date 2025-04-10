@@ -1,9 +1,9 @@
 :root {
-  --primary-color: #f9f9f9; // like background colour, header etc.
-  --secondary-color: #d7e0e7; // Colour of the cards
-  --tertiary-color: #28a745; // Colour of the buttons
-  --quaternary-color: #ff9800; // Colour of hoover
-  --quinary-color: black; // colour of text
+  --primary-color: #f4f4f4; // like background colour, header etc.
+  --secondary-color: #dee2e6; // Colour of the cards
+  --tertiary-color: #3c7c59; // Colour of the buttons
+  --quaternary-color: #6fa382; // Colour of hoover
+  --quinary-color: #1a1a1a; // colour of text
 }
 
 /* Global Button Styles */
@@ -33,4 +33,13 @@ a {
   text-decoration: none;
   font-weight: bold;
   transition: 0.2s ease-in-out;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  height: 100%;
+  width: 100%;
 }
