@@ -40,14 +40,7 @@ export class CheckoutPageComponent implements OnInit {
   completeCheckout(): void {
     if (this.cartItems.length === 0) return
 
-    this.stripeService.createCheckoutSession(this.cartItems).subscribe({
-      next: (res) => {
-        window.location.href = res.url
-      },
-      error: (err) => {
-        console.error('Stripe checkout failed:', err)
-        alert('Something went wrong while redirecting to Stripe.')
-      }
-    })
+    // routar till payment page istället
+    this.router.navigate(['/payment'])
   }
 }

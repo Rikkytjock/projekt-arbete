@@ -7,7 +7,10 @@ import { Injectable } from '@angular/core'
 export class StripeService {
   constructor(private http: HttpClient) {}
 
+  // updaterad för att matcha nest js
   createCheckoutSession(cartItems: any[]) {
-    return this.http.post<{ url: string }>('http://localhost:3000/api/create-checkout-session', { items: cartItems })
+    return this.http.post<{ url: string }>('http://localhost:3000/api/stripe/create-checkout-session', {
+      items: cartItems
+    })
   }
 }
