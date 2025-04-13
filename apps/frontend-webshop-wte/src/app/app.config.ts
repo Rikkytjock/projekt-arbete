@@ -1,11 +1,8 @@
-import { provideHttpClient } from '@angular/common/http' // lade till
+import { provideHttpClient } from '@angular/common/http'
 import { ApplicationConfig } from '@angular/core'
 import { provideRouter } from '@angular/router'
 import { appRoutes } from './app.routes'
 
 export const appConfig: ApplicationConfig = {
-  providers: [
-    provideRouter(appRoutes),
-    provideHttpClient() // lade till
-  ]
+  providers: [provideRouter(appRoutes), provideHttpClient()]
 }

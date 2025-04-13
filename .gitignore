@@ -1,7 +1,7 @@
 # See http://help.github.com/ignore-files/ for more about ignoring files.
 
 #ENV
-apps/backend-wte/.env
+# apps/backend-wte/.env //Tog bort denna eftersom jag väljer att pusha upp med API nyckel. Projektet kommer ändå inte att gå live i nuläget.
 
 # compiled output
 dist
